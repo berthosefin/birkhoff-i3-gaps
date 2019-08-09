@@ -1,0 +1,83 @@
+sw_volume: 90
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: stop
+current: 0
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 5
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Ext/Grand Corps Malade/Grand Corps Malade - 1000 vies.mp3
+1:Ext/Grand Corps Malade/Grand Corps Malade - 1er janvier 2010.mp3
+2:Ext/Grand Corps Malade/Grand Corps Malade - 6e sens.mp3
+3:Ext/Grand Corps Malade/Grand Corps Malade - À l'école de la vie.mp3
+4:Ext/Grand Corps Malade/Grand Corps Malade - A Montreal.mp3
+5:Ext/Grand Corps Malade/Grand Corps Malade - Acouphènes.mp3
+6:Ext/Grand Corps Malade/Grand Corps Malade - Au feu rouge.mp3
+7:Ext/Grand Corps Malade/Grand Corps Malade - Au Théâtre.mp3
+8:Ext/Grand Corps Malade/Grand Corps Malade - Bulletin Météo.mp3
+9:Ext/Grand Corps Malade/Grand Corps Malade - Ça peut chémar (ft John Pucc Chocolat).mp3
+10:Ext/Grand Corps Malade/Grand Corps Malade - ça peut chémar (ft Soprano, Oxmo Puccino & many).mp3
+11:Ext/Grand Corps Malade/Grand Corps Malade - Charades.mp3
+12:Ext/Grand Corps Malade/Grand Corps Malade - Chercheur de phases.mp3
+13:Ext/Grand Corps Malade/Grand Corps Malade - Comme je la connaissais pas.mp3
+14:Ext/Grand Corps Malade/Grand Corps Malade - Comme une évidence.mp3
+15:Ext/Grand Corps Malade/Grand Corps Malade - Course contre la honte (ft Richard Bohringer).mp3
+16:Ext/Grand Corps Malade/Grand Corps Malade - Définitivement.mp3
+17:Ext/Grand Corps Malade/Grand Corps Malade - Dimanche soir.mp3
+18:Ext/Grand Corps Malade/Grand Corps Malade - Du coté chance.mp3
+19:Ext/Grand Corps Malade/Grand Corps Malade - Education nationale.mp3
+20:Ext/Grand Corps Malade/Grand Corps Malade - Ensemble.mp3
+21:Ext/Grand Corps Malade/Grand Corps Malade - Espoir adapté.mp3
+22:Ext/Grand Corps Malade/Grand Corps Malade - Funambule.mp3
+23:Ext/Grand Corps Malade/Grand Corps Malade - Il a fait nuit toute la journéé.mp3
+24:Ext/Grand Corps Malade/Grand Corps Malade - Il nous reste ça.mp3
+25:Ext/Grand Corps Malade/Grand Corps Malade - Inch'Allah (ft Reda Taliani).mp3
+26:Ext/Grand Corps Malade/Grand Corps Malade - Issam.mp3
+27:Ext/Grand Corps Malade/Grand Corps Malade - J'ai mis des mots.mp3
+28:Ext/Grand Corps Malade/Grand Corps Malade - J'ai oublié.mp3
+29:Ext/Grand Corps Malade/Grand Corps Malade - J'ai pas les mots.mp3
+30:Ext/Grand Corps Malade/Grand Corps Malade - J'attends.mp3
+31:Ext/Grand Corps Malade/Grand Corps Malade - J'écris à l'oral.mp3
+32:Ext/Grand Corps Malade/Grand Corps Malade - Je dors sur mes deux oreilles.mp3
+33:Ext/Grand Corps Malade/Grand Corps Malade - Je patiente.mp3
+34:Ext/Grand Corps Malade/Grand Corps Malade - Je suis un enfant de la ville.mp3
+35:Ext/Grand Corps Malade/Grand Corps Malade - Je viens de là.mp3
+36:Ext/Grand Corps Malade/Grand Corps Malade - Jour de doute_2.mp3
+37:Ext/Grand Corps Malade/Grand Corps Malade - Jour de doute.mp3
+38:Ext/Grand Corps Malade/Grand Corps Malade - Jsuis pas rentré (feat. Rachid Taxi).mp3
+39:Ext/Grand Corps Malade/Grand Corps Malade - L'heure des poètes.mp3
+40:Ext/Grand Corps Malade/Grand Corps Malade - L'ombre et la lumiere.mp3
+41:Ext/Grand Corps Malade/Grand Corps Malade - La foule (ft Zaz).mp3
+42:Ext/Grand Corps Malade/Grand Corps Malade - La medaille de Renaud.mp3
+43:Ext/Grand Corps Malade/Grand Corps Malade - La syllabe au rebond.mp3
+44:Ext/Grand Corps Malade/Grand Corps Malade - La traversée (ft Francis Gabrel).mp3
+45:Ext/Grand Corps Malade/Grand Corps Malade - Le bout du tunnel.mp3
+46:Ext/Grand Corps Malade/Grand Corps Malade - Le jour se lève.mp3
+47:Ext/Grand Corps Malade/Grand Corps Malade - Le langage du corps.mp3
+48:Ext/Grand Corps Malade/Grand Corps Malade - Le manège.mp3
+49:Ext/Grand Corps Malade/Grand Corps Malade - Les 5 sens.mp3
+50:Ext/Grand Corps Malade/Grand Corps Malade - Les lignes de la main.mp3
+51:Ext/Grand Corps Malade/Grand Corps Malade - Les voyages en train.mp3
+52:Ext/Grand Corps Malade/Grand Corps Malade - Mental.mp3
+53:Ext/Grand Corps Malade/Grand Corps Malade - Midi 20.mp3
+54:Ext/Grand Corps Malade/Grand Corps Malade - Nos absents.mp3
+55:Ext/Grand Corps Malade/Grand Corps Malade - Patrick.mp3
+56:Ext/Grand Corps Malade/Grand Corps Malade - Plan B.mp3
+57:Ext/Grand Corps Malade/Grand Corps Malade - Pocahontas.mp3
+58:Ext/Grand Corps Malade/Grand Corps Malade - Poker (feat. Ehla).mp3
+59:Ext/Grand Corps Malade/Grand Corps Malade - Rencontre.mp3
+60:Ext/Grand Corps Malade/Grand Corps Malade - Roméo kiffe Juliette.mp3
+61:Ext/Grand Corps Malade/Grand Corps Malade - Sous les étoiles.mp3
+62:Ext/Grand Corps Malade/Grand Corps Malade - Sur La Lune.mp3
+63:Ext/Grand Corps Malade/Grand Corps Malade - Tant que les gens font l'amour.mp3
+64:Ext/Grand Corps Malade/Grand Corps Malade - Te manquer (ft Sandra Nkaké).mp3
+65:Ext/Grand Corps Malade/Grand Corps Malade - Tu Es Donc J'apprends (ft Charles Aznavour).mp3
+66:Ext/Grand Corps Malade/Grand Corps Malade - Tu peux déjà.mp3
+67:Ext/Grand Corps Malade/Grand Corps Malade - Tu seras un homme mon fils.mp3
+68:Ext/Grand Corps Malade/Grand Corps Malade - Un verbe.mp3
+playlist_end

@@ -1,0 +1,27 @@
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias sourceslist='sudo vim /etc/apt/sources.list'
+
+alias add_cdrom='sudo apt-cdrom add'
+alias Binary-1='sudo mount /home/birkhoff/Birkhoff/OS/debian-10.0.0-amd64-DVD-1.iso /media/cdrom'
+alias Binary-2='sudo mount /home/birkhoff/Birkhoff/OS/debian-10.0.0-amd64-DVD-2.iso /media/cdrom'
+alias Binary-3='sudo mount /home/birkhoff/Birkhoff/OS/debian-10.0.0-amd64-DVD-3.iso /media/cdrom'
+alias umount_cdrom='sudo umount /media/cdrom'
+
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias dist-upgrade='sudo apt-get dist-upgrade'
+alias search='apt-cache search'
+alias policy='apt-cache policy'
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
+alias autoremove='sudo apt-get autoremove'
+alias clean='sudo apt-get clean'	
+alias autoclean='sudo apt-get autoclean'
+alias purge='sudo apt-get remove --purge'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
