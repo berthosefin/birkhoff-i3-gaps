@@ -2,7 +2,7 @@
 # |__|\_____  \__  _  __ _____
 # |  |  _(__  <\ \/ \/ //     \
 # |  | /       \\     /|  Y Y  \
-# |__|/______  / \/\_/ |__|_|  /
+# |__|/birkhoff/ \/\_/ |__|_|  /
 #            \/              \/
 
 # set modifier
@@ -27,7 +27,7 @@ set_from_resource $warning     i3wm.color6  #de8990
 
 # class                 border       background   text         indicator   child_border
 client.focused          $background  $background  $primary     $primary	   $primary
-client.focused_inactive $background  $background  $tertiary    $tertiary   $secondary
+client.focused_inactive $background  $background  $secondary   $secondary  $secondary
 client.unfocused        $background  $background  $secondary   $secondary  $secondary
 client.urgent           $red         $red         $foreground  $red        $red 
 
@@ -37,8 +37,8 @@ floating_modifier $super
 #autostart
 exec --no-startup-id xsettingsd
 exec --no-startup-id compton
-exec --no-startup-id ~/.script/touchpad.sh
-exec --no-startup-id ~/.script/xmodmaprc.sh
+exec --no-startup-id ~/Birkhoff/Linux/script/touchpad.sh
+exec --no-startup-id ~/Birkhoff/Linux/script/xmodmaprc.sh
 exec --no-startup-id lxpolkit
 
 # Polybar
@@ -181,8 +181,8 @@ bindsym $super+g mode "gaps"
 #    separator_symbol ""
 #    tray_output LVDS-1
 #    font pango: iosevka Nerd Font, fontawesome 9
-#    colors {
-#        background $background
+#   colors {
+#       background $background
 #        statusline $foreground
 #        separator $primary
 #        
@@ -205,8 +205,8 @@ gaps outer 10
 #for_window [class=".*"] title_format " >_ %title "
 for_window [class=".*"] title_format "  <span foreground='$background' background='$primary'> %class </span><b>  %title </b>"
 
-assign [class=Firefox] 2
-assign [class=Gimp*|Inkscape|darktable] 3
-assign [class=Nautilus|Thunar|vlc|Rhythmbox] 4
-
 for_window [class=Lxappearance|Pavucontrol|Nitrogen] floating enable
+
+assign [class=Nautilus] 2
+assign [class=Firefox] 3
+assign [class=Gimp*|Inkscape|darktable] 4
