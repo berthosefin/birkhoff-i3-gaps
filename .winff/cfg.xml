@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <unix ffmpeg="/usr/bin/ffmpeg" ffplay="/usr/bin/ffplay" terminal="/usr/bin/x-terminal-emulator" termoptions="-e"/>
+  <general pause="true" displaycmdline="false" playsound="true" addfilesfolder="/home/birkhoff/Téléchargements/" currentpreset="MP3" showoptions="false" pass2="false" destfolder="/home/birkhoff/FF" rememberlast="true" multithreading="false" numberofthreads="" priority="" multipresets="false" beforecommand="" aftercommand=""/>
+  <window height="744" width="1366" top="24" left="0"/>
+</CONFIG>

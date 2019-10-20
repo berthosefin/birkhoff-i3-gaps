@@ -1,1 +1,2 @@
-rofi.theme: /usr/share/rofi/themes/Arc.rasi
+rofi.show-icons:true
+rofi.theme: /home/birkhoff/.local/share/rofi/themes/onedark.rasi

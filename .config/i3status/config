@@ -1,0 +1,54 @@
+### Configuration file for i3status
+## http://i3wm.org/i3status/
+
+
+###################
+# GENERAL OPTIONS #
+###################
+
+general {
+    colors = true
+    interval = 5
+    markup="pango"
+}
+
+###################
+# START AND ORDER #
+###################
+
+order += "window_title"
+order += "volume master"
+order += "battery 0"
+order += "time"
+
+###################
+# SENSORS SETTING #
+###################
+
+window_title {
+	format = '{title}'
+	cache_timeout = 0.1
+}
+
+volume master {
+    format = "♪: %volume"
+    format_muted = " : muted"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+battery 0 {
+        format = "%status %percentage "
+        format_down = "No battery"
+        status_chr = " "
+        status_bat = " "
+        status_unk = "? "
+        status_full = " "
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+time {
+    format = " %a %d %b - %H:%M "
+}

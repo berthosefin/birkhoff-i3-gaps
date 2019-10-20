@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 #
 # Neofetch config file
-# https://github.com/dylanaraps/neofetch
-
 
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info

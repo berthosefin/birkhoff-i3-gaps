@@ -1,0 +1,468 @@
+Debug [Main]: "Mixxx" "2.2.0" "(flags: asan=0 asmlib=0 battery=1 buildtime=0 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 lilv=1 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 opengles=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qt_sqlite_plugin=0 qtkeychain=0 shoutcast=1 test=False tsan=0 ubsan=0 vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting...
+Debug [Main]: Compile time library versions:
+Debug [Main]: Qt: 5.11.3
+Debug [Main]: libshout: 2.4.1
+Debug [Main]: PortAudio: 1246720 PortAudio V19.6.0-devel, revision 396fe4b6699ae929d3a685b3ef8a7e97396139a4
+Debug [Main]: RubberBand: 1.8.1
+Debug [Main]: SoundTouch: 2.1.2
+Debug [Main]: TagLib: 1.11.1
+Debug [Main]: ChromaPrint: 1.4.3
+Debug [Main]: Vorbis: Xiph.Org libVorbis 1.3.6
+Debug [Main]: libsndfile: libsndfile-1.0.28
+Debug [Main]: FLAC: 1.3.2
+Debug [Main]: QDesktopServices::storageLocation(HomeLocation): "/home/birkhoff"
+Debug [Main]: QDesktopServices::storageLocation(DataLocation): "/home/birkhoff/.local/share/data//Mixxx"
+Debug [Main]: QCoreApplication::applicationDirPath() "/usr/bin"
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Debug [Main]: Configuration file is at the current version 2.2.0
+Info [Main]: BroadcastSettings - Found 1 profile(s)
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Debug [Main]: Loading translations for locale "fr_FR" from translations folder "/usr/share/mixxx/translations/" : success
+Debug [Main]: "Error: Unable to import console: no such extension"
+Debug [Main]: "Error: Unable to import svg: no such extension"
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Debug [Main]: Compressor attack per frame:  0.000408163 decay per frame:  4.08163e-05
+Debug [Main]: JACK client name set
+Debug [Main]: EngineNetworkStream - addWorker: worker added
+Debug [Main]: EngineNetworkStream - worker slots used: "1 out of 16"
+Debug [Main]: BroadcastManager - addConnection: created connection for profile "Connection 1"
+Debug [Main]: WARNING: AudioInput already registered!
+Debug [Main]: WARNING: AudioInput already registered!
+Debug [Main]: WARNING: AudioInput already registered!
+Debug [Main]: WARNING: AudioInput already registered!
+Info [Main]: DbConnection - Available drivers for database connections: ("QSQLITE")
+Info [Main]: DbConnectionPool - Cloned thread-local database connection "MIXXX-1" QSqlDatabase(driver="QSQLITE", database="/home/birkhoff/.mixxx/mixxxdb.sqlite", host="localhost", port=-1, user="mixxx", open=true)
+Info [Main]: MixxxMainWindow - Connecting to database
+Info [Main]: MixxxMainWindow - Initializing or upgrading database schema
+Info [Main]: SchemaManager - Database schema is up-to-date at version 28
+Debug [Main]: LibraryScanner - Starting thread
+Info [Main]: Library - Connecting database
+Debug [LibraryScanner 1]: LibraryScanner - Entering thread
+Info [LibraryScanner 1]: DbConnectionPool - Cloned thread-local database connection "MIXXX-2" QSqlDatabase(driver="QSQLITE", database="/home/birkhoff/.mixxx/mixxxdb.sqlite", host="localhost", port=-1, user="mixxx", open=true)
+Debug [LibraryScanner 1]: LibraryScanner - Event loop starting
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: CrateFeature::rebuildChildModel() -1
+Debug [Main]: Default quick links: ("/home/birkhoff/Musique/", "/home/birkhoff/Downloads/", "/home/birkhoff/Bureau/", "/home/birkhoff/Documents/")
+Debug [Main]: Appending Quick Link:  "Musique" --- "/home/birkhoff/Musique/"
+Debug [Main]: Appending Quick Link:  "Downloads" --- "/home/birkhoff/Downloads/"
+Debug [Main]: Appending Quick Link:  "Bureau" --- "/home/birkhoff/Bureau/"
+Debug [Main]: Appending Quick Link:  "Documents" --- "/home/birkhoff/Documents/"
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Warning [Main]: Empty filename passed to function
+Debug [Main]: Traktor Library Location=[ "/home/birkhoff/collection.nml" ]
+Debug [Main]: Checking for access to user's library directories:
+Debug [Main]: Checking for access to "/home/birkhoff/Musique" : true
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Entering thread
+Info [AnalyzerQueue 1]: DbConnectionPool - Cloned thread-local database connection "MIXXX-3" QSqlDatabase(driver="QSQLITE", database="/home/birkhoff/.mixxx/mixxxdb.sqlite", host="localhost", port=-1, user="mixxx", open=true)
+Debug [Main]: Creating ControllerManager
+Debug [Controller]: ControllerManager:slotInitialize
+Debug [Main]: DBus interface  org.freedesktop.ScreenSaver  not valid
+Debug [Main]: DBus interface  org.gnome.ScreenSaver  not valid
+Debug [Main]: DBus interface  org.kde.screensaver  not valid
+Debug [Main]: RLimit Cur  0
+Debug [Main]: RLimit Max  0
+Debug [Main]: ControllerManager::getControllerList
+Info [Main]: VampPluginAdapter - Current VAMP_PATH is: ""
+Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/home/birkhoff/.local/share/data/Mixxx"
+Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/usr/bin"
+Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/usr/bin"
+Info [Main]: VampPluginAdapter - Setting VAMP_PATH to: "/usr/lib/mixxx/plugins/vampqt5"
+Debug [Main]: VampPluginLoader::listPlugins() returned 4 plugins
+Debug [Main]: Plugin output displayname: "mixxxbpmdetection:0" "SoundTouch BPM Detector (Legacy)"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:0" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:1" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:2" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:3" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-keydetector:0" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:1" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:2" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:3" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:0" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker"
+Debug [Main]: VampPluginLoader::listPlugins() returned 4 plugins
+Debug [Main]: Plugin output displayname: "mixxxbpmdetection:0" "SoundTouch BPM Detector (Legacy)"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:0" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:1" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:2" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:3" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-keydetector:0" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:1" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:2" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:3" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:0" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker"
+Debug [Main]: DlgPrefKey::loadSettings
+Debug [Main]: Key plugin ID: "qm-keydetector:2"
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x5556bd4af960) true
+Debug [Main]: Created root GL Context valid: 0x5556c29293c0 true
+Debug [Main]: Root GL Context format:
+Debug [Main]: Double Buffering: true
+Debug [Main]: Swap interval: 0
+Debug [Main]: Depth buffer: true
+Debug [Main]: Direct rendering: true
+Debug [Main]: Has overlay: false
+Debug [Main]: RGBA: true
+Debug [Main]: Sample buffers: false
+Debug [Main]: Samples: -1
+Debug [Main]: Stencil buffers: true
+Debug [Main]: Stereo: false
+Debug [Main]: LegacySkinParser loading skin: "/usr/share/mixxx/skins/LateNight"
+Debug [Main]: "Error: Unable to import console: no such extension"
+Debug [Main]: "Error: Unable to import svg: no such extension"
+Debug [Main]: Skin is a >=1.12.0 style skin.
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: GLWaveformRendererSignalShader::loadShaders
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 0
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: GLWaveformRendererSignalShader::loadShaders
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 1
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: GLWaveformRendererSignalShader::loadShaders
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 2
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: GLWaveformRendererSignalShader::loadShaders
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3
+Debug [Main]: WSearchLineEdit - Background color: QColor(ARGB 1, 1, 1, 1)
+Debug [Main]: WSearchLineEdit - Foreground color: QColor(ARGB 1, 0, 0, 0)
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x5556c84240b0)
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x5556cc5ff540)
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x5556bdbee180)
+Debug [Main]: Recordings folder set to "/home/birkhoff"
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x5556cc6bb0c0)
+Debug [BrowseThread]: Append last  0
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x5556cc64ecd0)
+Debug [Controller]: Extension .midi.xml total 110 presets
+Debug [Controller]: Extension .hid.xml total 10 presets
+Debug [Controller]: Extension .bulk.xml total 1 presets
+Debug [Main]: BaseTrackCache(0x5556bf3ff070) updateIndexWithQuery took 127 ms
+Debug [Main]: AnalysisLibraryTableModel(0x5556cc64ecd0) select() took 460 ms 11162
+Debug [Main]: AnalysisLibraryTableModel(0x5556cc64ecd0) select() took 164 ms 11162
+Debug [Main]: DlgAnalysis(0x5556cc70d5e0, name="DlgAnalysis") analysisActive false
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: Unknown property qpoperty-layoutAlignment
+Debug [Main]: Unknown property qpoperty-layoutAlignment
+Debug [Main]: MixxxLibraryFeature::activate()
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x5556bf40beb0)
+Debug [Main]: LibraryTableModel(0x5556bf40beb0) select() took 168 ms 11162
+Debug [Main]: trying to restore position
+Debug [Controller]: ControllerManager: Setting up devices
+Debug [Controller]: Scanning PortMIDI devices:
+Debug [Controller]: Scanning USB Bulk devices:
+Debug [Controller]: Scanning HID devices:
+Debug [Controller]: ControllerManager::getControllerList
+Debug [Controller]: Controller polling stopped.
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler2]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler3]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler4]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler5]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler6]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler7]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler8]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler9]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler10]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler11]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler12]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler13]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler14]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler15]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler16]"
+Debug [Main]: SoundManager::setupDevices()
+Warning [Main]: Output sound device clock reference not set! Using "Flux réseau"
+Debug [Main]: SoundDeviceNetwork - open: "Network stream"
+Debug [Main]: framesPerBuffer: 1024
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
+Debug [Main]: Using "Flux réseau" as output sound device clock reference
+Debug [Main]: 1 output sound devices opened
+Debug [Main]: 0 input sound devices opened
+Warning []: SoundDeviceNetworkThread: Failed bumping priority
+Debug []: SSE: Enabling denormals to zero mode
+Debug []: SSE: Enabling flush to zero mode
+Debug []: SSE: Denormals to zero mode is working
+Debug [Main]: 1 "HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "sysdefault"
+Debug [Main]: 2 "2, sysdefault"
+Debug [Main]: 1 "HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "sysdefault"
+Debug [Main]: 2 "2, sysdefault"
+Debug [Main]: 1 "HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "sysdefault"
+Debug [Main]: 2 "2, sysdefault"
+Debug [Main]: 1 "front"
+Debug [Main]: 2 "3, front"
+Debug [Main]: 1 "surround40"
+Debug [Main]: 2 "4, surround40"
+Debug [Main]: 1 "surround51"
+Debug [Main]: 2 "5, surround51"
+Debug [Main]: 1 "surround71"
+Debug [Main]: 2 "6, surround71"
+Debug [Main]: 1 "hdmi"
+Debug [Main]: 2 "7, hdmi"
+Debug [Main]: 1 "lavrate"
+Debug [Main]: 2 "8, lavrate"
+Debug [Main]: 1 "samplerate"
+Debug [Main]: 2 "9, samplerate"
+Debug [Main]: 1 "speexrate"
+Debug [Main]: 2 "10, speexrate"
+Debug [Main]: 1 "pulse"
+Debug [Main]: 2 "11, pulse"
+Debug [Main]: 1 "upmix"
+Debug [Main]: 2 "12, upmix"
+Debug [Main]: 1 "vdownmix"
+Debug [Main]: 2 "13, vdownmix"
+Debug [Main]: 1 "dmix"
+Debug [Main]: 2 "14, dmix"
+Debug [Main]: 1 "default"
+Debug [Main]: 2 "15, default"
+Debug [Main]: 1 "HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "sysdefault"
+Debug [Main]: 2 "2, sysdefault"
+Debug [Main]: 1 "front"
+Debug [Main]: 2 "3, front"
+Debug [Main]: 1 "surround40"
+Debug [Main]: 2 "4, surround40"
+Debug [Main]: 1 "surround51"
+Debug [Main]: 2 "5, surround51"
+Debug [Main]: 1 "surround71"
+Debug [Main]: 2 "6, surround71"
+Debug [Main]: 1 "hdmi"
+Debug [Main]: 2 "7, hdmi"
+Debug [Main]: 1 "lavrate"
+Debug [Main]: 2 "8, lavrate"
+Debug [Main]: 1 "samplerate"
+Debug [Main]: 2 "9, samplerate"
+Debug [Main]: 1 "speexrate"
+Debug [Main]: 2 "10, speexrate"
+Debug [Main]: 1 "pulse"
+Debug [Main]: 2 "11, pulse"
+Debug [Main]: 1 "upmix"
+Debug [Main]: 2 "12, upmix"
+Debug [Main]: 1 "vdownmix"
+Debug [Main]: 2 "13, vdownmix"
+Debug [Main]: 1 "dmix"
+Debug [Main]: 2 "14, dmix"
+Debug [Main]: 1 "default"
+Debug [Main]: 2 "15, default"
+Debug [Main]: 1 "HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "sysdefault"
+Debug [Main]: 2 "2, sysdefault"
+Debug [Main]: 1 "front"
+Debug [Main]: 2 "3, front"
+Debug [Main]: 1 "surround40"
+Debug [Main]: 2 "4, surround40"
+Debug [Main]: 1 "surround51"
+Debug [Main]: 2 "5, surround51"
+Debug [Main]: 1 "surround71"
+Debug [Main]: 2 "6, surround71"
+Debug [Main]: 1 "hdmi"
+Debug [Main]: 2 "7, hdmi"
+Debug [Main]: 1 "lavrate"
+Debug [Main]: 2 "8, lavrate"
+Debug [Main]: 1 "samplerate"
+Debug [Main]: 2 "9, samplerate"
+Debug [Main]: 1 "speexrate"
+Debug [Main]: 2 "10, speexrate"
+Debug [Main]: 1 "pulse"
+Debug [Main]: 2 "11, pulse"
+Debug [Main]: 1 "upmix"
+Debug [Main]: 2 "12, upmix"
+Debug [Main]: 1 "vdownmix"
+Debug [Main]: 2 "13, vdownmix"
+Debug [Main]: 1 "dmix"
+Debug [Main]: 2 "14, dmix"
+Debug [Main]: 1 "default"
+Debug [Main]: 2 "15, default"
+Debug [Main]: 1 "HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "sysdefault"
+Debug [Main]: 2 "2, sysdefault"
+Debug [Main]: 1 "front"
+Debug [Main]: 2 "3, front"
+Debug [Main]: 1 "surround40"
+Debug [Main]: 2 "4, surround40"
+Debug [Main]: 1 "surround51"
+Debug [Main]: 2 "5, surround51"
+Debug [Main]: 1 "surround71"
+Debug [Main]: 2 "6, surround71"
+Debug [Main]: 1 "hdmi"
+Debug [Main]: 2 "7, hdmi"
+Debug [Main]: 1 "lavrate"
+Debug [Main]: 2 "8, lavrate"
+Debug [Main]: 1 "samplerate"
+Debug [Main]: 2 "9, samplerate"
+Debug [Main]: 1 "speexrate"
+Debug [Main]: 2 "10, speexrate"
+Debug [Main]: 1 "pulse"
+Debug [Main]: 2 "11, pulse"
+Debug [Main]: 1 "upmix"
+Debug [Main]: 2 "12, upmix"
+Debug [Main]: 1 "vdownmix"
+Debug [Main]: 2 "13, vdownmix"
+Debug [Main]: 1 "dmix"
+Debug [Main]: 2 "14, dmix"
+Debug [Main]: 1 "default"
+Debug [Main]: 2 "15, default"
+Debug [Main]: SoundManager::setupDevices()
+Debug [Main]: SoundDevicePortAudio::open() "15, default"
+Debug [Main]: framesPerBuffer: 1024
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms
+Debug [Main]: Output channels: 2 | Input channels: 0
+Debug [Main]: Opening stream with id 15
+Debug [Main]: Opened PortAudio stream successfully... starting
+Debug [Main]: Dynamically loaded PortAudio library
+Debug [Main]: PortAudio: Started stream successfully
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 46.4399 ms
+Debug []: SSE: Enabling denormals to zero mode
+Debug []: SSE: Enabling flush to zero mode
+Debug []: Denormals to zero mode is working
+Debug [Main]: SoundDeviceNetwork - open: "Network stream"
+Debug [Main]: framesPerBuffer: 1024
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
+Debug [Main]: Using "default" as output sound device clock reference
+Debug [Main]: 2 output sound devices opened
+Debug [Main]: 0 input sound devices opened
+Debug [Main]: 1 "HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel MID: ALC270 Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel MID: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "sysdefault"
+Debug [Main]: 2 "2, sysdefault"
+Debug [Main]: 1 "front"
+Debug [Main]: 2 "3, front"
+Debug [Main]: 1 "surround40"
+Debug [Main]: 2 "4, surround40"
+Debug [Main]: 1 "surround51"
+Debug [Main]: 2 "5, surround51"
+Debug [Main]: 1 "surround71"
+Debug [Main]: 2 "6, surround71"
+Debug [Main]: 1 "hdmi"
+Debug [Main]: 2 "7, hdmi"
+Debug [Main]: 1 "lavrate"
+Debug [Main]: 2 "8, lavrate"
+Debug [Main]: 1 "samplerate"
+Debug [Main]: 2 "9, samplerate"
+Debug [Main]: 1 "speexrate"
+Debug [Main]: 2 "10, speexrate"
+Debug [Main]: 1 "pulse"
+Debug [Main]: 2 "11, pulse"
+Debug [Main]: 1 "upmix"
+Debug [Main]: 2 "12, upmix"
+Debug [Main]: 1 "vdownmix"
+Debug [Main]: 2 "13, vdownmix"
+Debug [Main]: 1 "dmix"
+Debug [Main]: 2 "14, dmix"
+Debug [Main]: 1 "default"
+Debug [Main]: 2 "15, default"
+Debug [Main]: DlgPrefVinyl::Apply
+Debug [Controller]: ControllerManager::getControllerList
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB
+Debug [Main]: DlgPrefLV2::slotApply 0x0
+Debug [Main]: Recordings path was empty in dialog
+Debug [Main]: Displaying main window
+Debug [Main]: Running Mixxx
+Warning [Main]: QXcbConnection: XCB error: 8 (BadMatch), sequence: 13453, resource id: 23068795, major code: 152 (Unknown), minor code: 11
+Warning [Main]: QXcbConnection: XCB error: 8 (BadMatch), sequence: 13455, resource id: 23068867, major code: 152 (Unknown), minor code: 11
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats.
+Debug [Main]: BaseTrackCache(0x5556bf3ff070) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5556bd14cb10)  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]"
+Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///home/birkhoff/Musique/+TANTARA/HAN'IZA NY HERY.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 18 bitrate: 64000 samplerate: 24000 flags: "0x1008"
+Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "HAN'IZA NY HERY" "/home/birkhoff/Musique/+TANTARA/HAN'IZA NY HERY.mp3"
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/birkhoff/Musique/+TANTARA/HAN'IZA NY HERY.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5556cd92cbc0)  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5556ceffbca0)  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5556d05729b0)  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5556d0599a90)  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5556d16cb0a0)  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5556d30afde0)  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 18 bitrate: 64000 samplerate: 24000 flags: "0x1008"
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 1 in 0 ms
+Debug [AnalyzerQueue 1]: VampAnalyzer BlockSize:  556
+Debug [AnalyzerQueue 1]: VampAnalyzer StepSize:  278
+Debug [AnalyzerQueue 1]: Beat calculation started with plugin "qm-tempotracker:0"
+Debug [AnalyzerQueue 1]: VampAnalyzer BlockSize:  16384
+Debug [AnalyzerQueue 1]: VampAnalyzer StepSize:  16384
+Debug [AnalyzerQueue 1]: Key calculation started with plugin "qm-keydetector:2"
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: Destroying MixxxMainWindow
+Debug [Main]: 0 ms saving configuration
+Debug [Main]: 0 ms deleting skin
+Debug [Main]: ~DlgAutoDJ()
+Debug [Main]: 534 ms deleting menubar
+Debug [Main]: 534 ms deleting SoundManager
+Debug [Main]: 542 ms deleting ControllerManager
+Debug [Controller]: Controller polling stopped.
+Debug [Controller]: Deleting PortMIDI devices...
+Debug [Controller]: Deleting USB Bulk devices...
+Debug [Controller]: Deleting HID devices...
+Debug [Main]: 543 ms deleting VinylControlManager
+Debug [Main]: ~CoverArtCache()
+Debug [Main]: 543 ms deleting PlayerManager
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread
+Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform():
+Debug [Main]: 555179970 ns deactivating GlobalTrackCache
+Debug [Main]: TrackDAO: Saving track 1 "/home/birkhoff/Musique/+TANTARA/HAN'IZA NY HERY.mp3"
+Debug [Main]: TrackDAO: Updating track in database 1 "/home/birkhoff/Musique/+TANTARA/HAN'IZA NY HERY.mp3"
+Debug [Main]: BaseTrackCache(0x5556bf3ff070) updateIndexWithQuery took 0 ms
+Debug [Main]: 629 ms deleting Library
+Debug [Main]: Wait to finish browser background thread
+Debug [Main]: Browser background thread terminated!
+Info [Main]: Library - Disconnecting database
+Debug [Main]: TrackDAO::finish()
+Debug [Main]: Clearing played information for this session
+Debug [Main]: Cleaning LibraryHashes/track_locations tables.
+Debug [Main]: ~TrackDAO()
+Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped
+Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
+Debug [LibraryScanner 1]: LibraryScanner - Exiting thread
+Debug [Main]: ~TrackDAO()
+Debug [Main]: 737 ms closing database connection(s)
+Debug [Main]: 738 ms deleting RecordingManager
+Debug [Main]: Delete RecordingManager
+Debug [Main]: 738 ms deleting BroadcastManager
+Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0
+Debug [Main]: 739 ms deleting EngineMaster
+Debug [Main]: in ~EngineMaster()
+Debug [Main]: 802 ms deleting DlgPreferences
+Debug [Main]: 815 ms deleting EffectsManager
+Debug [Main]: 841 ms deleting SettingsManager
+Debug [Main]: Mixxx shutdown complete with code 0

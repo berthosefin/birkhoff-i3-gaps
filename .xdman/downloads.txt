@@ -1,0 +1,241 @@
+20
+11
+id: b737778b-cba1-42a2-8466-35acae845d7f
+file: spreadtrum_usb_driver_20131114.zip_3.pdf
+category: 10
+state: 100
+date: 2019-10-20 10:29:25
+downloaded: 5858992
+size: 5858992
+progress: 35
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 887e64d1-abdc-4bdd-a306-c37f2c5189f8
+file: 100231-1447053-convertisseur-de-releves-de-compte-bnp-pdf-csv.zip
+category: 50
+state: 100
+date: 2019-10-20 10:56:03
+downloaded: 960019
+size: 960019
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 23e58c03-b623-4e2b-87af-142494e16107
+file: Roxane (2019).mp4
+category: 30
+state: 100
+date: 2019-10-20 10:40:32
+downloaded: 1083829358
+size: 1083829358
+progress: 99
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 94c59dd9-ffa4-4066-8c17-be2c129778bc
+file: El Camino  Un film Breaking Bad (2019).mp4
+category: 30
+state: 100
+date: 2019-10-20 10:58:57
+downloaded: 857733342
+size: 857733342
+progress: 98
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: fecc4a34-fbf1-4269-8ac5-391431007af0
+file: www_dominoes_stars_fr_strategie_domino_html.pdf
+category: 10
+state: 100
+date: 2019-10-16 14:52:18
+downloaded: 231770
+size: 231770
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: a645fe35-64c6-4965-9542-0b29647eed7c
+file: spreadtrum_usb_driver_20131114.zip_1.pdf
+category: 10
+state: 100
+date: 2019-10-20 10:26:41
+downloaded: 5858992
+size: 5858992
+progress: 71
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 602a996c-d511-447a-9cbf-6bf816a54c38
+file: libpng12-0_1.2.54-1ubuntu1_amd64.deb
+category: 20
+state: 100
+date: 2019-10-16 14:15:02
+downloaded: 116466
+size: 116466
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: dafde81d-ff70-4579-8978-5592da7e91fe
+file: 101416-1499662-2048-python-ai-1-ou-2-joueurs.zip
+category: 50
+state: 100
+date: 2019-10-20 10:27:34
+downloaded: 1395569
+size: 1395569
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 936c5419-c2f1-4fdb-a219-cd57ec8e8bef
+file: 101416-1499662-2048-python-ai-1-ou-2-joueurs_1.zip
+category: 50
+state: 100
+date: 2019-10-20 10:33:37
+downloaded: 1395569
+size: 1395569
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 6df2c466-c44e-4968-ae5e-b6f9bc0239ee
+file: 102437-0-ia-intelligence-artificielle-exemple-reseau-de-neurones.zip
+category: 50
+state: 100
+date: 2019-10-20 10:26:32
+downloaded: 24287
+size: 24287
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: a87c0f05-e75d-4f7d-b407-6d4756a5c0fc
+file: www_planetegeek_fr_tutorial_configurer_sp_flash_tool_linux.pdf
+category: 10
+state: 100
+date: 2019-10-16 14:27:50
+downloaded: 657384
+size: 657384
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: baca6fee-7924-4202-8de1-01369cc84c7b
+file: polybar-themes-master.zip
+category: 50
+state: 110
+date: 2019-10-20 10:49:25
+downloaded: 24726542
+size: -1
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: ec481d11-c001-40c3-800e-4c817c338a52
+file: 102434-0-cryptage-ultra-simple.zip
+category: 50
+state: 100
+date: 2019-10-20 10:25:16
+downloaded: 4621
+size: 4621
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 9cca2318-8108-40cb-9ee3-c64db9cde3f0
+file: Aladdin (2019).mp4
+category: 30
+state: 100
+date: 2019-10-20 10:52:39
+downloaded: 1519841823
+size: 1519841823
+progress: 99
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: f049cdcb-6a51-43d2-9f5d-63a2d21d1702
+file: spreadtrum_usb_driver_20131114.zip_2.pdf
+category: 10
+state: 100
+date: 2019-10-20 10:28:00
+downloaded: 5858992
+size: 5858992
+progress: 71
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: c8b584fa-d1b3-4ce5-9507-7299a6b3f0ed
+file: 100344-1412938-comparaison-recursive-de-2-repertoires.zip
+category: 50
+state: 100
+date: 2019-10-20 10:55:57
+downloaded: 3083
+size: 3083
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: d674c6d0-86aa-459e-8352-e4c6544378b4
+file: 44117-1203083-redimensionnement-d-images.zip
+category: 50
+state: 100
+date: 2019-10-20 10:56:14
+downloaded: 5630
+size: 5630
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: f440edb7-4d02-461f-8804-4ac902052ce0
+file: 101962-0-2048.zip
+category: 50
+state: 100
+date: 2019-10-20 10:38:50
+downloaded: 35946
+size: 35946
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: d4d095d9-5a72-470a-83d3-2076709e997c
+file: 38963-1143407-montage-de-fichiers-images-iso-nrg.zip
+category: 50
+state: 100
+date: 2019-10-20 10:56:18
+downloaded: 35731
+size: 35731
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 4e2a752f-c656-4a66-8785-c56953fd8813
+file: 38963-1143407-montage-de-fichiers-images-iso-nrg_1.zip
+category: 50
+state: 100
+date: 2019-10-20 10:56:39
+downloaded: 35731
+size: 35731
+progress: 0
+tempfolder: /home/birkhoff/.xdman/temp
+queueid: 
+formatIndex: 0
