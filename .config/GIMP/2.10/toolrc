@@ -44,7 +44,7 @@
     (visible yes))
 (GimpToolInfo "gimp-unified-transform-tool"
     (icon-name "gimp-tool-unified-transform")
-    (visible yes))
+    (visible no))
 (GimpToolInfo "gimp-rotate-tool"
     (icon-name "gimp-tool-rotate")
     (visible yes))
@@ -53,7 +53,7 @@
     (visible yes))
 (GimpToolInfo "gimp-shear-tool"
     (icon-name "gimp-tool-shear")
-    (visible yes))
+    (visible no))
 (GimpToolInfo "gimp-handle-transform-tool"
     (icon-name "gimp-tool-handle-transform")
     (visible yes))
@@ -62,13 +62,13 @@
     (visible yes))
 (GimpToolInfo "gimp-flip-tool"
     (icon-name "gimp-tool-flip")
-    (visible yes))
+    (visible no))
 (GimpToolInfo "gimp-cage-tool"
     (icon-name "gimp-tool-cage")
-    (visible yes))
+    (visible no))
 (GimpToolInfo "gimp-warp-tool"
     (icon-name "gimp-tool-warp")
-    (visible yes))
+    (visible no))
 (GimpToolInfo "gimp-text-tool"
     (icon-name "gimp-tool-text")
     (visible yes))
@@ -89,7 +89,7 @@
     (visible yes))
 (GimpToolInfo "gimp-airbrush-tool"
     (icon-name "gimp-tool-airbrush")
-    (visible yes))
+    (visible no))
 (GimpToolInfo "gimp-ink-tool"
     (icon-name "gimp-tool-ink")
     (visible yes))

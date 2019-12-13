@@ -1,52 +1,41 @@
-00:00:00.036288 main     VirtualBox XPCOM Server 6.0.14 r133895 linux.amd64 (Oct 10 2019 21:02:02) release log
-00:00:00.036292 main     Log opened 2019-10-17T09:48:54.993627000Z
-00:00:00.036294 main     Build Type: release
-00:00:00.036299 main     OS Product: Linux
-00:00:00.036301 main     OS Release: 4.19.0-6-amd64
-00:00:00.036303 main     OS Version: #1 SMP Debian 4.19.67-2+deb10u1 (2019-09-20)
-00:00:00.036335 main     DMI Product Name: HP G62 Notebook PC
-00:00:00.036348 main     DMI Product Version: 049B100002202710000020000
-00:00:00.036419 main     Host RAM: 3746MB (3.6GB) total, 3165MB (3.0GB) available
-00:00:00.036424 main     Executable: /usr/lib/virtualbox/VBoxSVC
-00:00:00.036425 main     Process ID: 14773
-00:00:00.036425 main     Package type: LINUX_64BITS__UBUNTU_18_04
-00:00:00.038531 main     IPC socket path: /tmp/.vbox-birkhoff-ipc/ipcd
-00:00:00.168494 nspr-2   VirtualBox: object creation starts
-00:00:00.169290 nspr-2   Home directory: '/home/birkhoff/.config/VirtualBox'
-00:00:00.183566 nspr-2   Loading settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:00:00.210839 nspr-2   Successfully initialised host USB using sysfs
-00:00:00.247294 nspr-2   NAT: resolv.conf: nameserver 196.192.32.5
-00:00:00.247342 nspr-2   NAT: resolv.conf: nameserver 41.188.9.130
-00:00:00.247368 nspr-2   HostDnsMonitor::updateInfo
-00:00:00.247396 nspr-2   HostDnsMonitor: old information
-00:00:00.247405 nspr-2     no server entries
-00:00:00.247413 nspr-2     no domain set
-00:00:00.247421 nspr-2     no search string entries
-00:00:00.247429 nspr-2   HostDnsMonitor: new information
-00:00:00.247436 nspr-2     server 1: 196.192.32.5
-00:00:00.247445 nspr-2     server 2: 41.188.9.130
-00:00:00.247453 nspr-2     no domain set
-00:00:00.247460 nspr-2     no search string entries
-00:00:00.260581 nspr-2   failed to create vboxnet0, error (0x80004005)
-00:00:00.342553 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:00.369931 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
-00:00:00.385076 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
-00:00:00.397559 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Metasploitable/Metasploitable.vbox" with version "1.16-linux"
-00:00:00.398498 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
-00:00:00.413518 nspr-2   OCI: Local config file '/home/birkhoff/.config/VirtualBox/oci_config' does not exist
-00:00:00.413575 nspr-2   OCI: Original config file '/home/birkhoff/.oci/config' does not exist
-00:00:00.413588 nspr-2   OCI: Reading profiles finished with status NS_OK
-00:00:00.413602 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
-00:00:00.413633 nspr-2   VirtualBox: object created
-00:00:05.630193 nspr-2   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:00:05.694423 nspr-5   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:00:05.767721 nspr-3   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:00:05.829108 nspr-4   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:00:11.399220 main     VirtualBox: object deletion starts
-00:00:11.399364 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Debian.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:00:11.399787 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:00:11.400147 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Metasploitable.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:00:11.400450 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/VirtualBox VMs/Kali/Kali.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:00:11.416909 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
-00:00:16.418791 main     {00007fdd900180f0} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
-00:00:16.419617 main     VirtualBox: object deleted
+00:00:00.021838 main     VirtualBox XPCOM Server 6.0.16 r135674 linux.amd64 (Jan 14 2020 10:17:21) release log
+00:00:00.021848 main     Log opened 2020-01-31T12:30:24.906178000Z
+00:00:00.021850 main     Build Type: release
+00:00:00.021863 main     OS Product: Linux
+00:00:00.021868 main     OS Release: 4.19.0-6-amd64
+00:00:00.021873 main     OS Version: #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+00:00:00.021936 main     DMI Product Name: HP G62 Notebook PC
+00:00:00.021960 main     DMI Product Version: 049B100002202710000020000
+00:00:00.022056 main     Host RAM: 3746MB (3.6GB) total, 2910MB (2.8GB) available
+00:00:00.022064 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.022065 main     Process ID: 59049
+00:00:00.022066 main     Package type: LINUX_64BITS_DEBIAN_10_0
+00:00:00.024722 main     IPC socket path: /tmp/.vbox-birkhoff-ipc/ipcd
+00:00:00.131985 nspr-2   VirtualBox: object creation starts
+00:00:00.141683 nspr-2   Home directory: '/home/birkhoff/.config/VirtualBox'
+00:00:00.142447 nspr-2   Loading settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:00.161038 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.181901 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:00:00.187099 nspr-2   HostDnsMonitor: initializing
+00:00:00.187444 nspr-2   HostDnsMonitor: updating information
+00:00:00.187469 nspr-2   HostDnsMonitor: unchanged
+00:00:00.419829 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.471288 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:00:00.498345 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Metasploitable/Metasploitable.vbox" with version "1.16-linux"
+00:00:00.504851 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
+00:00:00.526828 nspr-2   OCI: Local config file '/home/birkhoff/.config/VirtualBox/oci_config' does not exist
+00:00:00.526872 nspr-2   OCI: Original config file '/home/birkhoff/.oci/config' does not exist
+00:00:00.526881 nspr-2   OCI: Reading profiles finished with status NS_OK
+00:00:00.526898 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.526937 nspr-2   VirtualBox: object created
+00:00:06.104625 nspr-3   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:06.179199 nspr-2   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:11.749275 main     VirtualBox: object deletion starts
+00:00:11.749380 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Debian.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:11.821096 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Metasploitable.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:11.821378 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/VirtualBox VMs/Kali/Kali.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:11.821817 main     HostDnsMonitor: shutting down ...
+00:00:11.835728 main     HostDnsMonitor: shut down
+00:00:12.029569 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:16.843945 main     {00007fa0b801a4d0} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:00:16.844705 main     VirtualBox: object deleted

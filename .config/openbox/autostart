@@ -1,0 +1,22 @@
+# Autostart Apps
+-----------------
+
+### Compositor
+compton &
+
+### Wallpaper
+nitrogen --restore &
+wal -R &
+
+### Panel
+~/.config/polybar/launch.sh
+
+### Notification-daemon
+dunst &
+
+### Others
+xsettingsd &
+mpd &
+lxpolkit &
+~/.bin/xmodmaprc &
+~/.bin/touchpad &

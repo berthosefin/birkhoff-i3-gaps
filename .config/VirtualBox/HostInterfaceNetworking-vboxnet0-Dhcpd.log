@@ -1,60 +1,33 @@
-00:00:00.016966 VirtualBox DHCP Server 6.0.14 r133895 linux.amd64 (Oct 10 2019 21:01:14) release log
-00:00:00.016969 Log opened 2019-10-20T06:53:12.133339000Z
-00:00:00.016970 Build Type: release
-00:00:00.016973 OS Product: Linux
-00:00:00.016975 OS Release: 4.19.0-6-amd64
-00:00:00.016977 OS Version: #1 SMP Debian 4.19.67-2+deb10u1 (2019-09-20)
-00:00:00.017010 DMI Product Name: HP G62 Notebook PC
-00:00:00.017022 DMI Product Version: 049B100002202710000020000
-00:00:00.017075 Host RAM: 3746MB (3.6GB) total, 3306MB (3.2GB) available
-00:00:00.017079 Executable: /usr/lib/virtualbox/VBoxNetDHCP
-00:00:00.017079 Process ID: 1725
-00:00:00.017080 Package type: LINUX_64BITS__UBUNTU_18_04
-00:00:00.017128 MAC address is not specified: will use generated MAC 08:00:27:ff:07:62
-00:00:00.017137 IP address 192.168.56.100/24
-00:00:00.017143 address pool 192.168.56.101 - 192.168.56.254
-00:00:00.017153 loading leases from /home/birkhoff/.config/VirtualBox/HostInterfaceNetworking-vboxnet0-Dhcpd.leases
-00:00:00.031444 > LOAD: lease 192.168.56.104 to [ff:27:49:8f:ab:00:01:00:01:24:b8:56:18:08:00:27:2e:da:f9] (08:00:27:49:8f:ab), released, valid from 2019-10-17T06:17:30Z for 1200s until 2019-10-17T06:37:30Z
-00:00:00.031487 > LOAD: EXPIRED lease 192.168.56.103 to [01:08:00:27:17:3d:8d] (08:00:27:17:3d:8d), expired, valid from 2019-10-20T05:26:52Z for 1200s until 2019-10-20T05:46:51Z
-00:00:00.031503 > LOAD: lease 192.168.56.102 to 08:00:27:d4:a0:25, expired, valid from 2019-10-18T11:54:07Z for 1200s until 2019-10-18T12:14:07Z
-00:00:00.031517 > LOAD: lease 192.168.56.101 to 08:00:27:23:fe:cd, expired, valid from 2019-10-18T11:51:50Z for 1200s until 2019-10-18T12:11:50Z
-00:00:09.428836 REQUEST xid 0x164c7585 chaddr 08:00:27:17:3d:8d
-00:00:09.428902  client id: 01 08 00 27 17 3d 8d
-00:00:09.428912  ciaddr 0.0.0.0
-00:00:09.428923  requested address 192.168.56.103
-00:00:09.428934  params { 1 15 3 6 44 46 47 31 33 121 249 43 }
-00:00:09.428987  other options: 12 60 81
-00:00:09.429008 > allocateAddress 192.168.56.103 to client [01:08:00:27:17:3d:8d] (08:00:27:17:3d:8d)
-00:00:09.429021 > .... noted released binding 192.168.56.104 to [ff:27:49:8f:ab:00:01:00:01:24:b8:56:18:08:00:27:2e:da:f9] (08:00:27:49:8f:ab), released, valid from 2019-10-17T06:17:30Z for 1200s until 2019-10-17T06:37:30Z
-00:00:09.429059 > ... found existing binding 192.168.56.103 to [01:08:00:27:17:3d:8d] (08:00:27:17:3d:8d), expired, valid from 2019-10-20T05:26:52Z for 1200s until 2019-10-20T05:46:52Z
-00:00:09.429075 writing leases to /home/birkhoff/.config/VirtualBox/HostInterfaceNetworking-vboxnet0-Dhcpd.leases
-00:00:12.862344 INFORM xid 0x8489ce86 chaddr 08:00:27:17:3d:8d
-00:00:12.862415  client id: 01 08 00 27 17 3d 8d
-00:00:12.862426  ciaddr 192.168.56.103
-00:00:12.862442  params { 1 15 3 6 44 46 47 31 33 121 249 43 252 }
-00:00:12.862536  other options: 12 60
-00:00:16.321130 INFORM xid 0x8b6f45e1 chaddr 08:00:27:17:3d:8d
-00:00:16.321210  client id: 01 08 00 27 17 3d 8d
-00:00:16.321219  ciaddr 192.168.56.103
-00:00:16.321233  params { 1 15 3 6 44 46 47 31 33 121 249 43 252 }
-00:00:16.321315  other options: 12 60
-00:01:30.869846 INFORM xid 0xf9532b0c chaddr 08:00:27:17:3d:8d
-00:01:30.869936  client id: 01 08 00 27 17 3d 8d
-00:01:30.869949  ciaddr 192.168.56.103
-00:01:30.869970  params { 1 15 3 6 44 46 47 31 33 121 249 43 252 }
-00:01:30.870085  other options: 12 60
-00:04:57.637552 INFORM xid 0x646c7014 chaddr 08:00:27:17:3d:8d
-00:04:57.637627  client id: 01 08 00 27 17 3d 8d
-00:04:57.637638  ciaddr 192.168.56.103
-00:04:57.637656  params { 1 15 3 6 44 46 47 31 33 121 249 43 252 }
-00:04:57.637723  other options: 12 60
-00:06:00.771016 INFORM xid 0xad46fed3 chaddr 08:00:27:17:3d:8d
-00:06:00.771085  client id: 01 08 00 27 17 3d 8d
-00:06:00.771096  ciaddr 192.168.56.103
-00:06:00.771114  params { 1 15 3 6 44 46 47 31 33 121 249 43 252 }
-00:06:00.771185  other options: 12 60
-00:08:30.927893 INFORM xid 0xb0b00c83 chaddr 08:00:27:17:3d:8d
-00:08:30.927974  client id: 01 08 00 27 17 3d 8d
-00:08:30.927984  ciaddr 192.168.56.103
-00:08:30.928002  params { 1 15 3 6 44 46 47 31 33 121 249 43 252 }
-00:08:30.928175  other options: 12 60
+00:00:00.019332 VirtualBox DHCP Server 6.0.16 r135674 linux.amd64 (Jan 14 2020 10:16:36) release log
+00:00:00.019335 Log opened 2020-01-31T13:40:27.533060000Z
+00:00:00.019336 Build Type: release
+00:00:00.019339 OS Product: Linux
+00:00:00.019341 OS Release: 4.19.0-6-amd64
+00:00:00.019343 OS Version: #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+00:00:00.019378 DMI Product Name: HP G62 Notebook PC
+00:00:00.019391 DMI Product Version: 049B100002202710000020000
+00:00:00.019449 Host RAM: 3746MB (3.6GB) total, 2737MB (2.6GB) available
+00:00:00.019453 Executable: /usr/lib/virtualbox/VBoxNetDHCP
+00:00:00.019454 Process ID: 97956
+00:00:00.019454 Package type: LINUX_64BITS_DEBIAN_10_0
+00:00:00.019499 MAC address is not specified: will use generated MAC 08:00:27:96:f2:47
+00:00:00.019508 IP address 192.168.56.100/24
+00:00:00.019515 address pool 192.168.56.101 - 192.168.56.254
+00:00:00.019527 loading leases from /home/birkhoff/.config/VirtualBox/HostInterfaceNetworking-vboxnet0-Dhcpd.leases
+00:00:00.019687 > LOAD: lease 192.168.56.108 to [ff:27:79:56:e3:00:01:00:01:24:b8:56:18:08:00:27:2e:da:f9] (08:00:27:79:56:e3), expired, valid from 2019-12-19T11:08:19Z for 1200s until 2019-12-19T11:28:20Z
+00:00:00.019715 > LOAD: lease 192.168.56.107 to [01:08:00:27:b3:70:02] (08:00:27:b3:70:02), expired, valid from 2020-01-28T05:54:22Z for 1200s until 2020-01-28T06:14:22Z
+00:00:00.019733 > LOAD: lease 192.168.56.106 to [01:08:00:27:6e:ed:31] (08:00:27:6e:ed:31), expired, valid from 2019-11-29T04:17:29Z for 1200s until 2019-11-29T04:37:29Z
+00:00:00.019750 > LOAD: lease 192.168.56.105 to [01:08:00:27:95:e9:f6] (08:00:27:95:e9:f6), expired, valid from 2019-10-29T09:08:44Z for 1200s until 2019-10-29T09:28:44Z
+00:00:00.019767 > LOAD: lease 192.168.56.104 to [ff:27:49:8f:ab:00:01:00:01:24:b8:56:18:08:00:27:2e:da:f9] (08:00:27:49:8f:ab), expired, valid from 2019-12-19T11:02:50Z for 1200s until 2019-12-19T11:22:51Z
+00:00:00.019784 > LOAD: lease 192.168.56.103 to [01:08:00:27:17:3d:8d] (08:00:27:17:3d:8d), expired, valid from 2019-11-27T06:05:42Z for 1200s until 2019-11-27T06:25:42Z
+00:00:00.019800 > LOAD: lease 192.168.56.102 to 08:00:27:d4:a0:25, expired, valid from 2019-11-29T07:16:06Z for 1200s until 2019-11-29T07:36:06Z
+00:00:00.019814 > LOAD: EXPIRED lease 192.168.56.101 to 08:00:27:23:fe:cd, acked, valid from 2020-01-31T13:33:30Z for 1200s until 2020-01-31T13:53:30Z
+00:00:30.462442 REQUEST xid 0x6f0e8ae6 chaddr 08:00:27:23:fe:cd
+00:00:30.462518  ciaddr 0.0.0.0
+00:00:30.462537  requested address 192.168.56.101
+00:00:30.462558  params { 1 28 2 3 15 6 119 12 44 47 26 121 42 249 33 252 17 }
+00:00:30.462697  other options: 12
+00:00:30.462721 > allocateAddress 192.168.56.101 to client 08:00:27:23:fe:cd
+00:00:30.462737 > .... noted expired binding 192.168.56.108 to [ff:27:79:56:e3:00:01:00:01:24:b8:56:18:08:00:27:2e:da:f9] (08:00:27:79:56:e3), expired, valid from 2019-12-19T11:08:20Z for 1200s until 2019-12-19T11:28:20Z
+00:00:30.462785 > ... found existing binding 192.168.56.101 to 08:00:27:23:fe:cd, acked, valid from 2020-01-31T13:33:30Z for 1200s until 2020-01-31T13:53:30Z
+00:00:30.462805 writing leases to /home/birkhoff/.config/VirtualBox/HostInterfaceNetworking-vboxnet0-Dhcpd.leases

@@ -1,2 +1,3 @@
-rofi.show-icons:true
-rofi.theme: /home/birkhoff/.local/share/rofi/themes/onedark.rasi
+! Rofi
+rofi.font: Monospace 8
+rofi.theme: /home/birkhoff/.local/share/rofi/themes/defiro-dark.rasi

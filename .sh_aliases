@@ -21,5 +21,4 @@ alias Binary-3='sudo mount /home/birkhoff/Birkhoff/OS/debian-10.0.0-amd64-DVD-3.
 
 alias cdrom-umount='sudo umount /media/cdrom0'
 
-alias off='/sbin/poweroff'
-alias reboot='/sbin/reboot'
+alias ll='ls -la'

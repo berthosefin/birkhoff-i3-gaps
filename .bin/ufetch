@@ -1,13 +1,14 @@
-#!/bin/sh
-#
-# ufetch-debian - tiny system info for debian
+#!/bin/bash
 
-## INFO
+# Ufetch 
+# A simple screenfetch alternative
+# Original code from https://github.com/jschx/ufetch
+# I just slightly modified this
 
-# user is already defined
-host="$(hostname)"
-os='Debian'
-kernel="$(uname -sr)"
+## Get system info
+user="${USER}@$(hostname)"
+distro='Debian'
+kernel="$(uname -sr | sed 's/-.*//')"
 uptime="$(uptime -p | sed 's/up //')"
 packages="$(dpkg -l | wc -l)"
 shell="$(basename ${SHELL})"
@@ -27,37 +28,27 @@ else
 	envtype='WM'
 fi
 
-## DEFINE COLORS
-
-# probably don't change these
+## Define Colours
 bold="$(tput bold)"
-black="$(tput setaf 0)"
 red="$(tput setaf 1)"
-green="$(tput setaf 2)"
-yellow="$(tput setaf 3)"
-blue="$(tput setaf 4)"
-magenta="$(tput setaf 5)"
-cyan="$(tput setaf 6)"
 white="$(tput setaf 7)"
+bgred="$(tput setab 1)"
 reset="$(tput sgr0)"
+cbg="${reset}${bgred}${white}"
+cr="${reset}"
+c0="${reset}${bold}"
+c1="${reset}${red}"
 
-# you can change these
-lc="${reset}${bold}${red}"		# labels
-nc="${reset}${bold}${red}"		# user and hostname
-ic="${reset}${bold}${white}"	# info
-c0="${reset}${bold}${red}"		# first color
-c1="${reset}${red}"				# second color
-
-## OUTPUT
+## Output
 
 cat <<EOF
 
-${c0}    _____    ${lc}${USER}${ic}@${lc}${host}${reset}
-${c0}   /  __ \\   ${lc}OS:        ${ic}${os}${reset}
-${c0}  |  /    |  ${lc}KERNEL:    ${ic}${kernel}${reset}
-${c0}  |  ${c1}\\___-   ${lc}UPTIME:    ${ic}${uptime}${reset}
-${c1}  -_         ${lc}PACKAGES:  ${ic}${packages}${reset}
-${c1}    --_      ${lc}SHELL:     ${ic}${shell}${reset}
-${c0}             ${lc}${envtype}:        ${ic}${WM}${reset}
+  ${c0}${cbg}    _____    ${c1}    USER       ${cr}${user}${reset}
+  ${c0}${cbg}   /  __ \\   ${c1}    DISTRO     ${cr}${distro}${reset}
+  ${c0}${cbg}  |  /    |  ${c1}    KERNEL     ${cr}${kernel}${reset}
+  ${c0}${cbg}  |  \\___-   ${c1}    UPTIME     ${cr}${uptime}${reset}
+  ${c0}${cbg}  -_         ${c1}    ${envtype}         ${cr}${WM}${reset}
+  ${c0}${cbg}    --_      ${c1}    SHELL      ${cr}${shell}${reset}
+  ${c0}${cbg}             ${c1}    PACKAGES   ${cr}${packages}${reset}
 
 EOF

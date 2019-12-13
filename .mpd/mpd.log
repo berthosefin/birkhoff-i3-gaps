@@ -13025,3 +13025,19 @@ Oct 20 10:14 : client: [0] closed
 Oct 20 10:14 : client: [1] opened from 127.0.0.1:45020
 Oct 20 10:57 : client: [1] closed
 Oct 20 10:57 : client: [2] opened from 127.0.0.1:47850
+Jan 11 18:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 11 18:21 : avahi: Service 'Music Player @ hpG62' successfully established.
+Jan 11 18:28 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 11 18:28 : avahi: Service 'Music Player @ hpG62' successfully established.
+Jan 11 18:28 : client: [0] opened from 127.0.0.1:41518
+Jan 11 18:28 : client: [0] closed
+Jan 11 18:28 : client: [1] opened from 127.0.0.1:41520
+Jan 11 18:29 : client: [1] closed
+Jan 11 18:29 : client: [2] opened from 127.0.0.1:41522
+Jan 11 18:32 : client: [3] opened from 127.0.0.1:41524
+Jan 11 18:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 11 18:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 11 18:33 : client: [3] closed
+Jan 11 18:33 : client: [4] opened from 127.0.0.1:41526
+Jan 11 18:33 : player: played "Gas/Adrien/Adrien - Aza mirobaroba.mp3"
+Jan 11 18:33 : client: [4] closed

@@ -9,11 +9,11 @@
 set $super Mod4
 set $alt Mod1
 
-# set font
-font pango:Monospace Regular 8
-
 # Use Mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
+
+# Font for window titles
+font pango:Open Sans 8
 
 # autostart
 exec --no-startup-id lxpolkit
@@ -35,7 +35,7 @@ bindsym $super+Return exec xfce4-terminal
 bindsym $super+Shift+Return exec tilix
 
 # start dmenu (a program launcher)
-bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Monospace Regular:size=8'"
+bindsym $super+Shift+d exec i3-dmenu-desktop
 bindsym $super+d exec rofi -show drun
 
 # start a web browser
@@ -53,11 +53,10 @@ bindsym $super+l exec ~/.bin/blurlock
 
 # kill focused window
 bindsym $super+q kill
-bindsym $alt+F4 kill
 
 # change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer -q set Master 5%
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
 
 # music control
@@ -90,6 +89,7 @@ bindsym $super+f fullscreen toggle
 # change container layout split
 bindsym $super+s layout toggle split
 bindsym $super+w layout stacking
+bindsym $super+z layout tabbed
 
 # toggle tiling / floating
 bindsym $super+space floating toggle
@@ -128,7 +128,7 @@ bindsym $super+Shift+BackSpace reload
 bindsym $super+Shift+r restart
 
 # exit i3
-bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
+bindsym $super+Shift+q exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -155,27 +155,10 @@ bindsym $super+r mode "resize"
 bindsym $super+g mode "gaps"
 
 # set gaps
-gaps inner 10
-gaps outer 5
+gaps inner 15
+gaps outer 10
 smart_gaps on
 smart_borders on
-
-# Start i3bar to display a workspace bar (plus the system information i3status)
-#bar {
-#        colors {
-#        background $bg
-#        statusline $fg
-#        separator $c1
-#
-#        # colour of border, background, and text
-#        focused_workspace       $bg $c1 $bg
-#        active_workspace        $bg $c5 $bg
-#        inactive_workspace      $bg $c5 $bg
-#        urgent_workspace        $bg $c3 $bg
-#    }
-#        status_command py3status
-#	separator_symbol " :: "
-#}
 
 # color from pywal
 set_from_resource $bg i3wm.color0 #0d181e
@@ -204,7 +187,6 @@ for_window [class=".*"] title_format " <span foreground='$bg' background='$c1'> 
 for_window [class=Lxappearance|Pavucontrol|Nitrogen] floating enable
 for_window [class=Tilix|Xfce4-terminal|Gnome-terminal] floating enable
 
-assign [class=Lxappearance|Pavucontrol|Nitrogen] 2
-assign [class=Firefox] 3
-assign [class=libreoffice*] 4
-assign [class=Gimp*|Inkscape|Darktable] 5
+assign [class=Firefox] 2
+assign [class=Lxappearance|Pavucontrol|Nitrogen] 3
+assign [class=Gimp*|Inkscape|Darktable|libreoffice*] 4

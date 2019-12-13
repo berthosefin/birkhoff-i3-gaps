@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/girl_clock_wall_144783_1280x720.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0b0b",
+        "foreground": "#c8c6c7",
+        "cursor": "#c8c6c7"
+    },
+    "colors": {
+        "color0": "#0c0b0b",
+        "color1": "#3D8986",
+        "color2": "#479D9B",
+        "color3": "#59999B",
+        "color4": "#57A9A8",
+        "color5": "#6AB4B1",
+        "color6": "#908C90",
+        "color7": "#c8c6c7",
+        "color8": "#8c8a8b",
+        "color9": "#3D8986",
+        "color10": "#479D9B",
+        "color11": "#59999B",
+        "color12": "#57A9A8",
+        "color13": "#6AB4B1",
+        "color14": "#908C90",
+        "color15": "#c8c6c7"
+    }
+}

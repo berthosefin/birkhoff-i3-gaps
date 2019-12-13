@@ -1,19 +1,35 @@
 <?xml version="1.0"?>
 <Leases version="1.0">
-  <Lease mac="08:00:27:49:8f:ab" id="ff27498fab0001000124b856180800272edaf9" network="0.0.0.0" state="released">
-    <Address value="192.168.56.104"/>
-    <Time issued="1571293050" expiration="1200"/>
+  <Lease mac="08:00:27:79:56:e3" id="ff277956e30001000124b856180800272edaf9" network="0.0.0.0" state="expired">
+    <Address value="192.168.56.108"/>
+    <Time issued="1576753700" expiration="1200"/>
   </Lease>
-  <Lease mac="08:00:27:17:3d:8d" id="01080027173d8d" network="0.0.0.0" state="acked">
+  <Lease mac="08:00:27:b3:70:02" id="01080027b37002" network="0.0.0.0" state="expired">
+    <Address value="192.168.56.107"/>
+    <Time issued="1580190862" expiration="1200"/>
+  </Lease>
+  <Lease mac="08:00:27:6e:ed:31" id="010800276eed31" network="0.0.0.0" state="expired">
+    <Address value="192.168.56.106"/>
+    <Time issued="1575001049" expiration="1200"/>
+  </Lease>
+  <Lease mac="08:00:27:95:e9:f6" id="0108002795e9f6" network="0.0.0.0" state="expired">
+    <Address value="192.168.56.105"/>
+    <Time issued="1572340124" expiration="1200"/>
+  </Lease>
+  <Lease mac="08:00:27:49:8f:ab" id="ff27498fab0001000124b856180800272edaf9" network="0.0.0.0" state="expired">
+    <Address value="192.168.56.104"/>
+    <Time issued="1576753371" expiration="1200"/>
+  </Lease>
+  <Lease mac="08:00:27:17:3d:8d" id="01080027173d8d" network="0.0.0.0" state="expired">
     <Address value="192.168.56.103"/>
-    <Time issued="1571549212" expiration="1200"/>
+    <Time issued="1574834743" expiration="1200"/>
   </Lease>
   <Lease mac="08:00:27:d4:a0:25" network="0.0.0.0" state="expired">
     <Address value="192.168.56.102"/>
-    <Time issued="1571399647" expiration="1200"/>
+    <Time issued="1575011766" expiration="1200"/>
   </Lease>
-  <Lease mac="08:00:27:23:fe:cd" network="0.0.0.0" state="expired">
+  <Lease mac="08:00:27:23:fe:cd" network="0.0.0.0" state="acked">
     <Address value="192.168.56.101"/>
-    <Time issued="1571399510" expiration="1200"/>
+    <Time issued="1580477610" expiration="1200"/>
   </Lease>
 </Leases>

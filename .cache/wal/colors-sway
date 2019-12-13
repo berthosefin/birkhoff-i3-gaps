@@ -1,0 +1,21 @@
+set $wallpaper /home/birkhoff/Images/wallhaven-r25exq.jpg
+
+set $background #011B34
+set $foreground #dbe4ca
+
+set $color0 #011B34
+set $color1 #90AC29
+set $color2 #A7C93B
+set $color3 #98AB5A
+set $color4 #AECB61
+set $color5 #A8B4A8
+set $color6 #B5CC9C
+set $color7 #dbe4ca
+set $color8 #999f8d
+set $color9 #90AC29
+set $color10 #A7C93B
+set $color11 #98AB5A
+set $color12 #AECB61
+set $color13 #A8B4A8
+set $color14 #B5CC9C
+set $color15 #dbe4ca

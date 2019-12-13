@@ -1,59 +1,84 @@
-00:00:00.032854 main     VirtualBox XPCOM Server 6.0.12 r133076 linux.amd64 (Sep  3 2019 12:51:52) release log
-00:00:00.032863 main     Log opened 2019-10-16T06:47:03.015817000Z
-00:00:00.032865 main     Build Type: release
-00:00:00.032878 main     OS Product: Linux
-00:00:00.032882 main     OS Release: 4.19.0-6-amd64
-00:00:00.032887 main     OS Version: #1 SMP Debian 4.19.67-2+deb10u1 (2019-09-20)
-00:00:00.032949 main     DMI Product Name: HP G62 Notebook PC
-00:00:00.032967 main     DMI Product Version: 049B100002202710000020000
-00:00:00.033059 main     Host RAM: 3746MB (3.6GB) total, 3386MB (3.3GB) available
-00:00:00.033065 main     Executable: /usr/lib/virtualbox/VBoxSVC
-00:00:00.033066 main     Process ID: 1493
-00:00:00.033067 main     Package type: LINUX_64BITS__UBUNTU_18_04
-00:00:00.035707 main     IPC socket path: /tmp/.vbox-birkhoff-ipc/ipcd
-00:00:00.144148 nspr-2   VirtualBox: object creation starts
-00:00:00.144964 nspr-2   Home directory: '/home/birkhoff/.config/VirtualBox'
-00:00:00.155757 nspr-2   Loading settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:00:00.186083 nspr-2   Successfully initialised host USB using sysfs
-00:00:00.240452 nspr-2   NAT: resolv.conf: nameserver 196.192.32.5
-00:00:00.240507 nspr-2   NAT: resolv.conf: nameserver 41.188.9.130
-00:00:00.240536 nspr-2   HostDnsMonitor::updateInfo
-00:00:00.240562 nspr-2   HostDnsMonitor: old information
-00:00:00.240571 nspr-2     no server entries
-00:00:00.240578 nspr-2     no domain set
-00:00:00.240585 nspr-2     no search string entries
-00:00:00.240592 nspr-2   HostDnsMonitor: new information
-00:00:00.240599 nspr-2     server 1: 196.192.32.5
-00:00:00.240607 nspr-2     server 2: 41.188.9.130
-00:00:00.240615 nspr-2     no domain set
-00:00:00.240622 nspr-2     no search string entries
-00:00:00.360761 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:00.437649 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
-00:00:00.454966 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
-00:00:00.461614 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Metasploitable/Metasploitable.vbox" with version "1.16-linux"
-00:00:00.462750 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
-00:00:00.481496 nspr-2   OCI: Local config file '/home/birkhoff/.config/VirtualBox/oci_config' does not exist
-00:00:00.481528 nspr-2   OCI: Original config file '/home/birkhoff/.oci/config' does not exist
-00:00:00.481536 nspr-2   OCI: Reading profiles finished with status NS_OK
-00:00:00.481549 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
-00:00:00.481577 nspr-2   VirtualBox: object created
-00:00:12.040505 nspr-2   Load [/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] vrc=VINF_SUCCESS
-00:00:19.516231 nspr-7   Saving settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
-00:02:09.344269 nspr-8   Load [/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] vrc=VINF_SUCCESS
-00:02:12.133177 nspr-9   Saving settings file "/home/birkhoff/VirtualBox VMs/Metasploitable/Metasploitable.vbox" with version "1.16-linux"
-00:08:10.369205 nspr-4   Saving settings file "/home/birkhoff/VirtualBox VMs/Metasploitable/Metasploitable.vbox" with version "1.16-linux"
-00:08:10.433244 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Saved screenshot thumbnail data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:08:10.457040 SaveState Saving settings file "/home/birkhoff/VirtualBox VMs/Metasploitable/Metasploitable.vbox" with version "1.16-linux"
-00:08:12.232366 nspr-4   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:08:12.294152 nspr-2   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:08:12.352682 nspr-5   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
-00:09:08.201983 nspr-4   Saving settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
-00:09:09.983437 SaveState Saving settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
-00:09:16.529317 main     VirtualBox: object deletion starts
-00:09:16.529402 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Debian.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:09:16.529727 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:09:16.529971 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Metasploitable.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:09:16.530184 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/VirtualBox VMs/Kali/Kali.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:09:16.711854 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
-00:09:21.581362 main     {00007fa97c0162e0} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
-00:09:21.582149 main     VirtualBox: object deleted
+00:00:00.038408 main     VirtualBox XPCOM Server 6.0.16 r135674 linux.amd64 (Jan 14 2020 10:17:21) release log
+00:00:00.038414 main     Log opened 2020-01-28T05:05:11.966378000Z
+00:00:00.038415 main     Build Type: release
+00:00:00.038424 main     OS Product: Linux
+00:00:00.038426 main     OS Release: 4.19.0-6-amd64
+00:00:00.038429 main     OS Version: #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+00:00:00.038481 main     DMI Product Name: HP G62 Notebook PC
+00:00:00.038505 main     DMI Product Version: 049B100002202710000020000
+00:00:00.038608 main     Host RAM: 3746MB (3.6GB) total, 2903MB (2.8GB) available
+00:00:00.038617 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.038618 main     Process ID: 5645
+00:00:00.038618 main     Package type: LINUX_64BITS_DEBIAN_10_0
+00:00:00.041070 main     IPC socket path: /tmp/.vbox-birkhoff-ipc/ipcd
+00:00:00.149262 nspr-2   VirtualBox: object creation starts
+00:00:00.167226 nspr-2   Home directory: '/home/birkhoff/.config/VirtualBox'
+00:00:00.180836 nspr-2   Loading settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:00.206781 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.231938 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:00:00.238602 nspr-2   HostDnsMonitor: initializing
+00:00:00.238871 nspr-2   NAT: resolv.conf: nameserver 196.192.32.5
+00:00:00.238897 nspr-2   NAT: resolv.conf: nameserver 41.188.9.130
+00:00:00.238927 nspr-2   HostDnsMonitor: updating information
+00:00:00.238989 nspr-2   HostDnsMonitor: old information
+00:00:00.239004 nspr-2     no server entries
+00:00:00.239011 nspr-2     no domain set
+00:00:00.239017 nspr-2     no search string entries
+00:00:00.239027 nspr-2   HostDnsMonitor: new information
+00:00:00.239034 nspr-2     server 1: 196.192.32.5
+00:00:00.239043 nspr-2     server 2: 41.188.9.130
+00:00:00.239051 nspr-2     no domain set
+00:00:00.239059 nspr-2     no search string entries
+00:00:00.380864 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.412916 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Debian/Debian.vbox" with version "1.16-linux"
+00:00:00.423161 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Metasploitable/Metasploitable.vbox" with version "1.16-linux"
+00:00:00.435248 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
+00:00:00.436454 nspr-2   Loading settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
+00:00:00.470324 nspr-2   OCI: Local config file '/home/birkhoff/.config/VirtualBox/oci_config' does not exist
+00:00:00.470382 nspr-2   OCI: Original config file '/home/birkhoff/.oci/config' does not exist
+00:00:00.470393 nspr-2   OCI: Reading profiles finished with status NS_OK
+00:00:00.470410 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.470448 nspr-2   VirtualBox: object created
+00:00:14.062468 nspr-4   Load [/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] vrc=VINF_SUCCESS
+00:00:14.585740 nspr-5   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:00:18.577689 nspr-4   Saving settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
+00:26:49.843649 nspr-3   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:42:09.458505 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:42:09.667609 nspr-6   Saving settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
+00:42:09.826427 nspr-2   Saving settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
+00:42:36.158633 nspr-5   Saving settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
+00:42:41.794718 nspr-4   Load [/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] vrc=VINF_SUCCESS
+00:42:42.004885 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:42:42.033802 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:42:42.175098 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:45:30.565436 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:45:34.327810 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:49:03.735234 nspr-9   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:03.753559 nspr-9   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:11.733616 nspr-7   Saving settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
+00:49:17.913733 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:17.926068 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:23.721027 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:23.731240 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:32.228846 nspr-5   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:32.239669 nspr-5   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:49:39.022784 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={SessionMachine} aText={The machine is not mutable or running (state is Saved)}, preserve=false aResultDetail=0
+00:50:06.080455 nspr-5   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:50:06.090576 nspr-5   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link status for enp3s0: VBoxNetAdpCtl: ioctl failed: No such device
+00:50:11.773381 nspr-2   Saving settings file "/home/birkhoff/VirtualBox VMs/Kali/Kali.vbox" with version "1.16-linux"
+00:50:19.155965 nspr-7   Saving settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
+00:50:19.308469 nspr-3   Saving settings file "/home/birkhoff/VirtualBox VMs/Windows 7/Windows 7.vbox" with version "1.15-linux"
+00:50:24.439618 nspr-9   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:50:26.390549 nspr-8   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:50:26.514832 nspr-8   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:50:26.571722 nspr-9   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:50:26.630603 nspr-3   Saving settings file "/home/birkhoff/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:50:32.205069 main     VirtualBox: object deletion starts
+00:50:32.205174 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Debian.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:50:32.246229 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/Birkhoff/OS/Metasploitable.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:50:32.246404 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/birkhoff/VirtualBox VMs/Kali/Kali.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:50:32.296164 main     HostDnsMonitor: shutting down ...
+00:50:32.296799 main     HostDnsMonitor: shut down
+00:50:32.327893 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:50:37.303349 main     {00007fe4e401a830} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:50:37.304148 main     VirtualBox: object deleted

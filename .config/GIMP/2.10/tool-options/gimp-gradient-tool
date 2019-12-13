@@ -1,6 +1,6 @@
 # GIMP gimp-gradient-tool options
 
-(foreground (color-rgb 0.584314 0.584314 0.584314))
+(background (color-rgb 0.000000 0.000000 0.000000))
 (gradient "PP vers AP (RVB)")
 (brush-size 51.000000)
 (brush-hardness 0.500000)

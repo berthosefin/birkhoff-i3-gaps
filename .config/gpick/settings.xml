@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding='UTF-8'?><root>
 <gpick type="dynv">
 <generate_scheme type="dynv">
+<hsv_shift type="float" list="true"><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li></hsv_shift>
+<hue type="float">184.028</hue>
+<lightness type="float">0</lightness>
+<saturation type="float">53</saturation>
+<type type="int32">0</type>
+<wheel_locked type="bool">true</wheel_locked>
+<wheel_type type="int32">0</wheel_type>
 </generate_scheme>
 <layout_preview type="dynv">
 <css_selectors type="dynv">
@@ -25,15 +32,15 @@
 <layout_name type="string">std_layout_menu_1</layout_name>
 </layout_preview>
 <main type="dynv">
-<color_source type="string">color_picker</color_source>
-<paned_position type="int32">469</paned_position>
+<color_source type="string">generate_scheme</color_source>
+<paned_position type="int32">437</paned_position>
 <secondary_color_source type="string"></secondary_color_source>
 <vertical_paned_position type="int32">0</vertical_paned_position>
 <window type="dynv">
-<height type="int32">712</height>
-<width type="int32">433</width>
-<x type="int32">916</x>
-<y type="int32">39</y>
+<height type="int32">694</height>
+<width type="int32">422</width>
+<x type="int32">918</x>
+<y type="int32">24</y>
 </window>
 </main>
 <picker type="dynv">
@@ -47,7 +54,7 @@
 <info type="bool">false</info>
 <lab type="bool">false</lab>
 <lch type="bool">false</lch>
-<rgb type="bool">false</rgb>
+<rgb type="bool">true</rgb>
 <settings type="bool">false</settings>
 </expander>
 <sampler type="dynv">

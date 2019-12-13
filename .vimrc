@@ -10,10 +10,10 @@
 "     \__\::::/      \__\/      \  \:\    
 "         ~~~~                   \__\/    
 
- " Set compatibility to Vim only.
+" Set compatibility to Vim only.
 set nocompatible
 
-"Always show current position
+" Always show current position
 set ruler
 
 " Turn on syntax highlighting.
@@ -45,6 +45,7 @@ set magic
 
 " Display 5 lines above/below the cursor when scrolling with a mouse.
 set scrolloff=5
+
 " Fixes common backspace problems
 set backspace=indent,eol,start
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VeraCrypt>
+	<favorites>
+		<volume mountpoint="/media/veracrypt1" readonly="0" slotnumber="1" system="0">/home/birkhoff/ConfidenThos</volume>
+	</favorites>
+</VeraCrypt>

@@ -4034,6 +4034,828 @@
         (proc-arg 13 "new-image" "Output gray image (N/A for single channel extract)")
         (proc-arg 13 "new-image" "Output gray image (N/A for single channel extract)")
         (proc-arg 13 "new-image" "Output gray image (N/A for single channel extract)")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/python-eval/python-eval.py" 1545661022
+    (proc-def "python-fu-eval" 1
+         "Evaluate Python code"
+         "Evaluate python code under the python interpreter (primarily for batch mode)"
+         "Manish Singh"
+         "Manish Singh"
+         "2006"
+         ""
+         0
+        (icon icon-name -1 "")
+         ""
+         2 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "code" "The code to evaluate")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/python-console/python-console.py" 1545661022
+    (proc-def "python-fu-console" 1
+         "Interactive GIMP Python interpreter"
+         "Type in commands and see results"
+         "James Henstridge"
+         "James Henstridge"
+         "1997-1999"
+         "_Console"
+         1
+        (menu-path "<Image>/Filters/Languages/Python-Fu")
+        (icon icon-name -1 "")
+         ""
+         1 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/py-slice/py-slice.py" 1545661022
+    (proc-def "python-fu-slice" 1
+         "Cuts an image along its guides, creates images and a HTML table snippet"
+         "Add guides to an image. Then run this. It will cut along the guides,\n    and give you the html to reassemble the resulting images. If you\n    choose to generate javascript for onmouseover and clicked events, it\n    will use the lower three visible layers on the image for normal,\n    onmouseover and clicked states, in that order. If skip caps is\n    enabled, table cells on the edge of the table won't become animated,\n    and its images will be taken from the active layer."
+         "Manish Singh"
+         "Manish Singh"
+         "2003"
+         "_Tranche…"
+         1
+        (menu-path "<Image>/Filters/Web")
+        (icon icon-name -1 "")
+         "*"
+         12 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "save-path" "Chemin pour l'exportation HTML")
+        (proc-arg 4 "html-filename" "Nom du fichier pour l'exportation")
+        (proc-arg 4 "image-basename" "Préfixe des noms d'image")
+        (proc-arg 4 "image-extension" "Format de l'image")
+        (proc-arg 0 "separate-image-dir" "Dossier séparé pour les images")
+        (proc-arg 4 "relative-image-path" "Dossier pour l'exportation des images")
+        (proc-arg 0 "cellspacing" "Espacement entre les éléments de la table")
+        (proc-arg 0 "animate" "JavaScript pour onmouseover et clicked")
+        (proc-arg 0 "skip-caps" "Sauter l'animation pour les bords de la table"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/palette-to-gradient/palette-to-gradient.py" 1545661022
+    (proc-def "python-fu-palette-to-gradient" 1
+         "Create a gradient using colors from the palette"
+         "Create a new gradient using colors from the palette."
+         "Carol Spears, reproduced from previous work by Adrian Likins and Jeff Trefftz"
+         "Carol Spears"
+         "2006"
+         "Palette to _Gradient"
+         1
+        (menu-path "<Palettes>")
+        (icon icon-name -1 "")
+         ""
+         2 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "palette" "Palette")
+        (proc-arg 4 "new-gradient" "Result"))
+    (proc-def "python-fu-palette-to-gradient-repeating" 1
+         "Create a repeating gradient using colors from the palette"
+         "Create a new repeating gradient using colors from the palette."
+         "Carol Spears, reproduced from previous work by Adrian Likins and Jeff Trefftz"
+         "Carol Spears"
+         "2006"
+         "Palette to _Repeating Gradient"
+         1
+        (menu-path "<Palettes>")
+        (icon icon-name -1 "")
+         ""
+         2 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "palette" "Palette")
+        (proc-arg 4 "new-gradient" "Result"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/palette-sort/palette-sort.py" 1545661022
+    (proc-def "python-fu-palette-sort" 1
+         "Sort the colors in a palette"
+         "palette_sort (palette, selection, slice_expr, channel,\nchannel2, quantize, ascending, pchannel, pquantize) -> new_palette\nSorts a palette, or part of a palette, using several options.\nOne can select two color channels over which to sort,\nand several auxiliary parameters create a 2D sorted\npalette with sorted rows, among other things.\nOne can optionally install colormath\n(https://pypi.python.org/pypi/colormath/1.0.8)\nto GIMP's Python to get even more channels to choose from.\n"
+         "João S. O. Bueno, Carol Spears, David Gowers"
+         "João S. O. Bueno, Carol Spears, David Gowers"
+         "2006-2014"
+         "_Sort Palette..."
+         1
+        (menu-path "<Palettes>")
+        (icon icon-name -1 "")
+         ""
+         11 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "palette" "Palette")
+        (proc-arg 0 "selections" "Sélections")
+        (proc-arg 4 "slice-expr" "Expression de tranche")
+        (proc-arg 0 "channel1" "Canal à trier")
+        (proc-arg 0 "ascending1" "Ascendant")
+        (proc-arg 0 "channel2" "Canal secondaire à trier")
+        (proc-arg 0 "ascending2" "Ascendant")
+        (proc-arg 3 "quantize" "Quantification")
+        (proc-arg 0 "pchannel" "Canal de partitionnement")
+        (proc-arg 3 "pquantize" "Quantification de partition"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/palette-offset/palette-offset.py" 1545661022
+    (proc-def "python-fu-palette-offset" 1
+         "Offset the colors in a palette"
+         "palette_offset (palette, amount) -> modified_palette"
+         "Joao S. O. Bueno Calligaris, Carol Spears"
+         "(c) Joao S. O. Bueno Calligaris"
+         "2004, 2006"
+         "_Offset Palette..."
+         1
+        (menu-path "<Palettes>")
+        (icon icon-name -1 "")
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "palette" "Palette")
+        (proc-arg 0 "amount" "Décalage")
+        (proc-arg 4 "new-palette" "Result"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/histogram-export/histogram-export.py" 1545661022
+    (proc-def "python-fu-histogram-export" 1
+         "Exports the image histogram to a text file (CSV)"
+         "\nExports the image histogram to a text file,\nso that it can be used by other programs\nand loaded into spreadsheets.\n\nThe resulting file is a CSV file (Comma Separated\nValues), which can be imported\ndirectly in most spreadsheet programs.\n\nThe first two collums are the bucket boundaries,\nfollowed by the selected columns. The histogram\nrefers to the selected image area, and\ncan use either Sample Average data or data\nfrom the current drawable only.;\n\nThe output is in \"weighted pixels\" - meaning\nall fully transparent pixels are not counted.\n\nCheck the gimp-histogram call\n"
+         "João S. O. Bueno"
+         "João S. O. Bueno, 2014"
+         "2014"
+         "_Export histogram..."
+         1
+        (menu-path "<Image>/Colors/Info")
+        (icon icon-name -1 "")
+         "*"
+         7 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "img" "Image")
+        (proc-arg 16 "drw" "Élément graphique")
+        (proc-arg 4 "filename" "Fichier histogramme")
+        (proc-arg 3 "bucket-size" "Taille de compartiment")
+        (proc-arg 0 "sample-average" "Moyenne de l'échantillon")
+        (proc-arg 4 "output-format" "Format de sortie"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/gradients-save-as-css/gradients-save-as-css.py" 1545661022
+    (proc-def "python-fu-gradient-save-as-css" 1
+         "Creates a new palette from a given gradient"
+         "palette_from_gradient (gradient, number, segment_colors) -> None"
+         "Joao S. O. Bueno"
+         "(c) GPL V3.0 or later"
+         "2011"
+         "Save as CSS..."
+         1
+        (menu-path "<Gradients>")
+        (icon icon-name -1 "")
+         ""
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "gradient" "Gradient to use")
+        (proc-arg 4 "file-name" "File Name"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/foggify/foggify.py" 1545661022
+    (proc-def "python-fu-foggify" 1
+         "Add a layer of fog"
+         "Adds a layer of fog to the image."
+         "James Henstridge"
+         "James Henstridge"
+         "1999,2007"
+         "_Fog..."
+         1
+        (menu-path "<Image>/Filters/Decor")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         7 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "name" "Nom de calque")
+        (proc-arg 10 "colour" "Couleur de brouillard")
+        (proc-arg 3 "turbulence" "Turbulence")
+        (proc-arg 3 "opacity" "Opacité"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-openraster/file-openraster.py" 1545661022
+    (proc-def "file-openraster-load-thumb" 1
+         "loads a thumbnail from an OpenRaster (.ora) file"
+         "loads a thumbnail from an OpenRaster (.ora) file"
+         "Jon Nordby"
+         "Jon Nordby"
+         "2009"
+         ""
+         0
+        (icon icon-name -1 "")
+         ""
+         3 3
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 0 "thumb-size" "Preferred thumbnail size")
+        (proc-arg 13 "image" "Thumbnail image")
+        (proc-arg 0 "image-width" "Width of full-sized image")
+        (proc-arg 0 "image-height" "Height of full-sized image"))
+    (proc-def "file-openraster-load" 1
+         "load an OpenRaster (.ora) file"
+         "load an OpenRaster (.ora) file"
+         "Jon Nordby"
+         "Jon Nordby"
+         "2009"
+         "OpenRaster"
+         1
+        (menu-path "<Load>")
+        (icon icon-name -1 "")
+        (load-proc
+            (extensions "ora")
+            (mime-types "image/openraster")
+            (thumb-loader "file-openraster-load-thumb"))
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-openraster-save" 1
+         "save an OpenRaster (.ora) file"
+         "save an OpenRaster (.ora) file"
+         "Jon Nordby"
+         "Jon Nordby"
+         "2009"
+         "OpenRaster"
+         1
+        (menu-path "<Save>")
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "ora"))
+         "*"
+         5 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "filename" "The name of the file")
+        (proc-arg 4 "raw-filename" "The name of the file")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/colorxhtml/colorxhtml.py" 1545661022
+    (proc-def "file-colorxhtml-save" 1
+         "Save as colored XHTML"
+         "Saves the image as colored XHTML text (based on Perl version by Marc Lehmann)"
+         "Manish Singh and Carol Spears"
+         "Manish Singh and Carol Spears"
+         "2003"
+         "Colored XHTML"
+         1
+        (menu-path "<Save>")
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "xhtml"))
+         "RGB"
+         9 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "filename" "The name of the file")
+        (proc-arg 4 "raw-filename" "The name of the file")
+        (proc-arg 4 "source" "Source caractère")
+        (proc-arg 4 "characters" "Fichier à lire ou caractères à utiliser")
+        (proc-arg 0 "font-size" "Taille de police en pixels")
+        (proc-arg 0 "separate" "Écrire séparément un fichier CSS"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/webexport" 1529963675
+    (proc-def "file-web-export" 1
+         "Optimize & save image for web"
+         "Optimize image for web."
+         "Aurimas Juška"
+         "Aurimas Juška"
+         "0.25"
+         "Save for Web..."
+         1
+        (menu-path "<Image>/File/Save")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*, INDEXED*"
+         3 0
+        (proc-arg 0 "run-mode" "Interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable"))
+    (locale-def "gimp20-save-for-web" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/wavelet-denoise" 1529963675
+    (proc-def "plug-in-wavelet-denoise" 1
+         "Removes noise in the image using wavelets."
+         "This plugin allows the separate denoising of image channels in multiple color spaces using wavelets."
+         "Marco Rossini"
+         "Copyright 2008 Marco Rossini"
+         "2008"
+         "_Wavelet denoise ..."
+         1
+        (menu-path "<Image>/Filters/Enhance")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         3 0
+        (proc-arg 0 "run-mode" "Run mode")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable"))
+    (locale-def "gimp20-wavelet-denoise-plug-in" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/streak" 1529963675
+    (proc-def "plug_in_streak" 1
+         "Streak image creation"
+         "This plug-in creates a streak-image from a film. Width and position of the slit are selectable. Position default is the center of the image."
+         "Reinhard Geisler"
+         "Reinhard Geisler"
+         "5.2000-6.2004"
+         ""
+         1
+        (menu-path "<Image>/Filters/Animation/Streak")
+        (icon icon-name -1 "")
+         "RGB*,GRAY*,INDEXED*"
+         6 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image-id" "Input image")
+        (proc-arg 16 "drawable-id" "Input drawable")
+        (proc-arg 0 "slit-position" "Slit position")
+        (proc-arg 0 "slit-width" "Slit Width")
+        (proc-arg 0 "vertical" "vertical slit? (0, 1)")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/separate_import" 1529963675
+    (proc-def "plug_in_separate_import" 1
+         "Importer une image TIFF CMJN"
+         "Charge l'image TIFF CMJN et génère 4 calques C/M/J/N à la place des canaux.\nPour la convertir en image RVB monocalque, utilisez la procédure separate-proof"
+         "Yoshinori Yamakawa"
+         "Yoshinori Yamakawa"
+         "2007-2010"
+         "From CMYK TIFF"
+         1
+        (menu-path "<Image>/File/Create/")
+        (icon icon-name -1 "")
+         ""
+         2 1
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 4 "filename" "Filename")
+        (proc-arg 13 "new-image" "Separated image"))
+    (locale-def "gimp20-separate"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/separate" 1529963675
+    (proc-def "plug_in_separate_separate" 1
+         "Faire les séparations"
+         "Separate réalise la séparation CMJN d'un image dans quatre calques séparés."
+         "Alastair Robinson, Yoshinori Yamakawa"
+         "Alastair Robinson"
+         "2002-2010"
+         ""
+         1
+        (menu-path "<Image>/Image/Separate/Separate")
+        (icon inline-pixbuf 2328 "GdkP\0\0\11\30\1\1\0\2\0\0\0\140\0\0\0\30\0\0\0\30\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\224\22\22\22\377\22\22\22\354\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\354\25\25\25\224\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\224\2\2\2\377\324H\240\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\260\11\74\377\2\2\2\377\25\25\25\260\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\354\0\261\321\377\5\5\5\377\337N\254\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\375Y\303\377\337N\254\377\0\0\0\377\326\305\0\377\22\22\22\365\25\25\25C\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\267\325\377\5\5\5\377\335M\252\377\370Q\266\377\367O\264\377\367O\264\377\367O\264\377\367O\264\377\367O\264\377\367O\264\377\367O\264\377\367O\264\377\367O\264\377\327D\232\377\3\3\3\377\330\307\0\377\377\353\1\377\22\22\22\377\22\22\22j\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\267\325\377\3\3\3\377\322\64\203\377\354\73\224\377\353\72\222\377\353\72\222\377\353\72\222\377\353\72\222\377\353\72\222\377\353\72\222\377\353\72\222\377\321\63\201\377\3\3\3\377\330\311\4\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\316\366\377\0\221\304\377\1\1\1\377\305\57x\377\353\71\220\377\353\71\220\377\353\71\220\377\353\71\220\377\353\71\220\377\353\71\220\377\305\57x\377\1\1\1\377\327\320\15\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\230\320\377\3\3\3\377\307\60y\377\353\71\220\377\353\71\220\377\353\71\220\377\353\71\220\377\307\60y\377\3\3\3\377\346\336\17\377\377\367\20\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\251\347\377\0\223\312\377\3\3\3\377\315\61\175\377\353\71\220\377\353\71\220\377\315\61\175\377\3\3\3\377\337\330\16\377\377\367\21\377\377\367\20\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\251\347\377\0\251\347\377\0\215\301\377\2\2\2\377\305\57x\377\305\57x\377\2\2\2\377\326\317\16\377\377\367\21\377\377\367\21\377\377\367\20\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\251\347\377\0\251\347\377\0\251\347\377\0\216\302\377\2\2\2\377\2\2\2\377\327\320\16\377\377\367\21\377\377\367\21\377\377\367\21\377\377\367\20\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\251\347\377\0\251\347\377\0\251\347\377\0\216\302\377\2\2\2\377\2\2\2\377\327\320\16\377\377\367\21\377\377\367\21\377\377\367\21\377\377\367\20\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\251\347\377\0\251\347\377\0\215\301\377\2\2\2\377\34\21\5\377\34\21\5\377\2\2\2\377\326\317\16\377\377\367\21\377\377\367\21\377\377\367\20\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\251\347\377\0\223\312\377\3\3\3\377\35\22\5\377\42\25\6\377\42\25\6\377\35\22\5\377\3\3\3\377\337\330\16\377\377\367\21\377\377\367\20\377\377\356\5\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\253\350\377\0\230\320\377\3\3\3\377\34\21\5\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\34\21\5\377\3\3\3\377\346\336\16\377\377\367\20\377\377\356\4\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\313\365\377\0\220\303\377\1\1\1\377\34\21\5\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\34\21\5\377\1\1\1\377\327\317\14\377\377\356\4\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\331\374\377\0\252\317\377\3\3\3\377\35\22\5\377\41\25\6\377\41\25\6\377\41\25\6\377\41\25\6\377\41\25\6\377\41\25\6\377\41\25\6\377\41\24\6\377\35\21\5\377\2\2\2\377\330\307\0\377\377\353\1\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\0\331\374\377\0\267\325\377\3\3\3\377\12\6\1\377\13\6\2\377\13\6\2\377\13\6\2\377\13\6\2\377\13\6\2\377\13\6\2\377\13\6\2\377\13\6\2\377\12\6\1\377\12\5\1\377\3\1\0\377\0\0\0\377\330\307\0\377\377\353\1\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\354\0T\250\377\0\0\0\377\2\0\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\2\0\0\377\0\0\0\377\326\305\0\377\22\22\22\365\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\224\2\2\2\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\3\1\0\377\2\2\2\377\24\24\24\304\22\22\22j\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\260\22\22\22\377\22\22\22\365\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\365\24\24\24\304\22\22\22s\25\25\25C\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25C\22\22\22s\22\22\22j\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22j\25\25\25C\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0")
+         "RGB*"
+         12 1
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "input-profile" "Input ICC profile")
+        (proc-arg 0 "use-embedded-profile" "Use embedded source profile if possible (TRUE, FALSE)")
+        (proc-arg 4 "output-profile" "Output ICC profile")
+        (proc-arg 0 "rendering-intent" "Rendering intent (0-3)")
+        (proc-arg 0 "use-bpc" "Use BPC algorithm (TRUE, FALSE)")
+        (proc-arg 0 "preserve-black" "Preserve pure black (TRUE, FALSE)")
+        (proc-arg 0 "overprint-black" "Overprint pure black (TRUE, FALSE)")
+        (proc-arg 0 "use-dither" "Use dither (TRUE, FALSE)")
+        (proc-arg 0 "pseudo-composite" "Make CMYK pseudo-composite (TRUE, FALSE)")
+        (proc-arg 13 "new-image" "Separated image"))
+    (proc-def "plug_in_separate_full" 1
+         "Faire les séparations"
+         "Separate réalise la séparation CMJN d'un image dans chaque canal alpha de quatre calques séparés."
+         "Alastair Robinson, Yoshinori Yamakawa"
+         "Alastair Robinson"
+         "2002-2010"
+         ""
+         0
+        (icon icon-name -1 "")
+         "RGB*"
+         11 1
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "input-profile" "Input ICC profile")
+        (proc-arg 0 "use-embedded-profile" "Use embedded source profile if possible (TRUE, FALSE)")
+        (proc-arg 4 "output-profile" "Output ICC profile")
+        (proc-arg 0 "rendering-intent" "Rendering intent (0-3)")
+        (proc-arg 0 "use-bpc" "Use BPC algorithm (TRUE, FALSE)")
+        (proc-arg 0 "preserve-black" "Preserve pure black (TRUE, FALSE)")
+        (proc-arg 0 "overprint-black" "Overprint pure black (TRUE, FALSE)")
+        (proc-arg 0 "use-dither" "Use dither (TRUE, FALSE)")
+        (proc-arg 13 "new-image" "Separated image"))
+    (proc-def "plug_in_separate_light" 1
+         "Faire les séparations"
+         "Separate réalise la séparation CMJN d'un image dans quatre calques en tons de gris séparés."
+         "Alastair Robinson, Yoshinori Yamakawa"
+         "Alastair Robinson"
+         "2002-2010"
+         ""
+         0
+        (icon icon-name -1 "")
+         "RGB*"
+         11 1
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "input-profile" "Input ICC profile")
+        (proc-arg 0 "use-embedded-profile" "Use embedded source profile if possible (TRUE, FALSE)")
+        (proc-arg 4 "output-profile" "Output ICC profile")
+        (proc-arg 0 "rendering-intent" "Rendering intent (0-3)")
+        (proc-arg 0 "use-bpc" "Use BPC algorithm (TRUE, FALSE)")
+        (proc-arg 0 "preserve-black" "Preserve pure black (TRUE, FALSE)")
+        (proc-arg 0 "overprint-black" "Overprint pure black (TRUE, FALSE)")
+        (proc-arg 0 "use-dither" "Use dither (TRUE, FALSE)")
+        (proc-arg 13 "new-image" "Separated image"))
+    (proc-def "plug_in_separate_proof" 1
+         "Génération logicielle des couleurs CMJN"
+         "Separate simule une séparation CMJN avec un média de fond blanc puis revient au RVB."
+         "Alastair Robinson, Yoshinori Yamakawa"
+         "Alastair Robinson"
+         "2002-2010"
+         ""
+         1
+        (menu-path "<Image>/Image/Separate/Proof")
+        (icon icon-name -1 "gimp-display-filter-proof")
+         "RGB*,GRAY*"
+         7 1
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "display-profile" "Monitor profile")
+        (proc-arg 4 "proofing-profile" "Proofing profile")
+        (proc-arg 0 "use-attached-profile" "Use attached proofing profile if possible (TRUE, FALSE)")
+        (proc-arg 0 "mode" "0:Normal, 1:Black ink simulation, 2:Media white simulation")
+        (proc-arg 13 "new-image" "Proof image"))
+    (proc-def "plug_in_separate_duotone" 1
+         "Génére une séparation bichrome"
+         "Splits an image into Red and Black plates, mapped into a CMYK image.  HACK Alert:  The Red plate occupies the Magenta channel of the CMYK image, allowing extraction of spot colour with standard CMYK separation code..."
+         "Alastair Robinson"
+         "Alastair Robinson"
+         "2002"
+         ""
+         1
+        (menu-path "<Image>/Image/Separate/Duotone")
+        (icon inline-pixbuf 2328 "GdkP\0\0\11\30\1\1\0\2\0\0\0\140\0\0\0\30\0\0\0\30\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\224\22\22\22\377\22\22\22\354\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\354\25\25\25\224\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\224\35\22\5\377\65\41\11\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\3\1\0\377\2\2\2\377\25\25\25\260\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\354\65\41\11\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\60\36\10\377\0\0\0\377\326\0\0\377\22\22\22\365\25\25\25C\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\67\43\12\377\67\43\12\377\62\37\11\377\61\37\11\377\61\37\11\377\61\37\11\377\61\37\11\377\61\37\11\377\61\37\11\377\61\37\11\377\61\37\11\377\61\37\11\377\51\32\7\377\3\3\3\377\330\0\0\377\377\0\0\377\22\22\22\377\22\22\22j\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\67\43\12\377\50\31\7\377\44\26\6\377\44\26\6\377\43\26\6\377\43\26\6\377\43\26\6\377\43\26\6\377\43\26\6\377\43\26\6\377\43\26\6\377\37\23\5\377\3\3\3\377\330\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\62\37\11\377\44\26\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\34\21\5\377\1\1\1\377\327\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\34\21\5\377\3\3\3\377\346\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\35\22\5\377\3\3\3\377\337\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\34\21\5\377\2\2\2\377\326\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\42\25\6\377\42\25\6\377\42\25\6\377\42\25\6\377\34\21\5\377\3\3\3\377\327\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\42\25\6\377\42\25\6\377\42\25\6\377\34\21\5\377\3\3\3\377\331\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\42\25\6\377\42\25\6\377\34\21\5\377\2\2\2\377\326\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\42\25\6\377\35\22\5\377\3\3\3\377\337\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\43\26\6\377\36\22\5\377\3\3\3\377\330\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\61\37\11\377\35\22\5\377\1\1\1\377\326\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\67\43\12\377\50\31\7\377\3\3\3\377\343\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\377\67\43\12\377\56\35\10\377\3\3\3\377\337\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\377\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\22\22\22\354\3\1\0\377\0\0\0\377\341\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\22\22\22\365\22\22\22s\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\224\2\2\2\377\330\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\377\0\0\377\24\24\24\304\22\22\22j\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25\260\22\22\22\377\22\22\22\365\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\377\22\22\22\365\24\24\24\304\22\22\22s\25\25\25C\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\25\25\25C\22\22\22s\22\22\22j\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22s\22\22\22j\25\25\25C\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0\377\377\377\0")
+         "RGB*"
+         3 1
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 13 "new-image" "Separated image"))
+    (proc-def "plug_in_separate_save" 1
+         "Enregistrer l'image séparée."
+         "Enregistre l'image séparée en TIFF.\nNotez que cette procédure en fournie pour compatibilité."
+         "Alastair Robinson, Yoshinori Yamakawa"
+         "Alastair Robinson"
+         "2002-2010"
+         ""
+         0
+        (icon icon-name -1 "")
+         "RGB*,GRAY*"
+         5 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "filename" "Filename")
+        (proc-arg 0 "embed-profile" "0:None, 1:CMYK profile, 2:Print simulation profile, 3:Own profile"))
+    (proc-def "plug_in_separate_export" 1
+         "Exporter l'image séparée."
+         "Exporter l'image séparée.\nLes formats disponibles sont listés dans le fichier README."
+         "Alastair Robinson, Yoshinori Yamakawa"
+         "Alastair Robinson"
+         "2002-2010"
+         ""
+         1
+        (menu-path "<Image>/Image/Separate/Export...")
+        (icon icon-name -1 "gtk-save-as")
+         "RGB*,GRAY*"
+         8 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "filename" "Filename")
+        (proc-arg 0 "embed-profile" "0:None, 1:CMYK profile, 2:Print simulation profile, 3:Own profile")
+        (proc-arg 0 "filetype" "-1:Auto, 1:TIFF")
+        (proc-arg 0 "compression" "Compress pixel data if available (TRUE, FALSE)")
+        (proc-arg 19 "vectors" "Clipping path or -1"))
+    (locale-def "gimp20-separate"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/resynthesizer_gui" 1529963675
+    (proc-def "plug-in-resynth-controls" 1
+         "Make tiles, apply themes, render texture, remove features, etc."
+         "The resynthesizer control panel."
+         "Paul Francis Harrison, Lloyd Konneker"
+         "2000 Paul Francis Harrison, 2010 Lloyd Konneker"
+         "2010"
+         "_Resynthesize..."
+         1
+        (menu-path "<Image>/Filters/Map")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         13 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "vtile" "Make tilable vertically 0,1")
+        (proc-arg 0 "htile" "Make tilable horizontally 0,1")
+        (proc-arg 0 "use-context" "Make edges match context 0,1,2,...")
+        (proc-arg 0 "corpus" "Layer to use as corpus")
+        (proc-arg 0 "inmask" "Layer to use as input mask, -1 for none")
+        (proc-arg 0 "outmask" "Layer to use as output mask, -1 for none")
+        (proc-arg 3 "map-weight" "Weight to give to map, if map is used")
+        (proc-arg 3 "autism" "Sensitivity to outliers")
+        (proc-arg 0 "neighbourhood" "Neighbourhood size")
+        (proc-arg 0 "trys" "Search thoroughness"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/resynthesizer" 1529963675
+    (proc-def "plug-in-resynthesizer" 1
+         "Engine for resynthesizer kind of texture synthesis."
+         "The resynthesizer engine."
+         "Paul Francis Harrison, Lloyd Konneker"
+         "2000 Paul Francis Harrison, 2010 Lloyd Konneker"
+         "2010"
+         ""
+         0
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         13 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "vtile" "Make tilable vertically 0,1")
+        (proc-arg 0 "htile" "Make tilable horizontally 0,1")
+        (proc-arg 0 "use-context" "Make edges match context 0,1,2,...")
+        (proc-arg 0 "corpus" "Layer to use as corpus")
+        (proc-arg 0 "inmask" "Layer to use as input mask, -1 for none")
+        (proc-arg 0 "outmask" "Layer to use as output mask, -1 for none")
+        (proc-arg 3 "map-weight" "Weight to give to map, if map is used")
+        (proc-arg 3 "autism" "Sensitivity to outliers")
+        (proc-arg 0 "neighbourhood" "Neighbourhood size")
+        (proc-arg 0 "trys" "Search thoroughness")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-uncrop.py" 1529963675
+    (proc-def "python_fu_uncrop" 1
+         "Enlarge image by synthesizing a border that matches the edge, maintaining perspective.  Works best for small enlargement of natural edges. Undo a Crop instead, if possible! "
+         "Requires separate resynthesizer plugin."
+         "Lloyd Konneker"
+         "Copyright 2009 Lloyd Konneker"
+         "2009"
+         "Uncrop..."
+         1
+        (menu-path "<Image>/Filters/Enhance")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         4 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 3 "percentEnlargeParam" "Percent enlargement"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-resynth-sharpen.py" 1529963675
+    (proc-def "python_fu_sharpen_resynthesized" 1
+         "Sharpen image by synthesis."
+         "Requires separate resynthesizer plugin."
+         "Lloyd Konneker"
+         "Copyright 2000 Paul Harrison, 2010 Lloyd Konneker"
+         "2010"
+         "Sharpen by synthesis..."
+         1
+        (menu-path "<Image>/Filters/Enhance")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         4 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "sharpen-factor" "Sharpening:"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-resynth-fill-pattern.py" 1529963675
+    (proc-def "python_fu_fill_pattern_resynth" 1
+         "Seamlessly fill with a pattern using synthesis."
+         "Requires separate resynthesizer plugin."
+         "Lloyd Konneker"
+         "Copyright 2011 Lloyd Konneker"
+         "2011"
+         "_Fill with pattern seamless..."
+         1
+        (menu-path "<Image>/Edit")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         4 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 4 "pattern" "Pattern:"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-resynth-enlarge.py" 1529963675
+    (proc-def "python_fu_enlarge_resynthesized" 1
+         "Enlarge image and synthesize to sharpen."
+         "Requires separate resynthesizer plugin"
+         "Lloyd Konneker"
+         "Copyright 2000 Paul Harrison, 2010 Lloyd Konneker"
+         "2010"
+         "Enlarge & sharpen..."
+         1
+        (menu-path "<Image>/Filters/Enhance")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         4 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "scale-factor" "Scale by:"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-render-texture.py" 1529963675
+    (proc-def "python_fu_render_texture" 1
+         "Create a new image with texture from the current image or selection. Optionally, create image edges suited for further, seamless tiling. "
+         "New image is the same scale but seamless and irregular.  Use 'Map>Tile' for less randomness. Use 'Edit>Fill resynthesized pattern' for more randomness. Requires separate resynthesizer plugin."
+         "Lloyd Konneker"
+         "Copyright 2010 Lloyd Konneker"
+         "2010"
+         "_Texture..."
+         1
+        (menu-path "<Image>/Filters/Render")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         5 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "resize-ratio" "Ratio of size of new image to source selection")
+        (proc-arg 0 "make-tile" "Make new image edges suitable for seamless tiling")
+        (proc-arg 13 "new-image" "New, synthesized texture."))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-map-style.py" 1529963675
+    (proc-def "python_fu_map_style" 1
+         "Transfer style (color and surface) from a chosen source to the active layer. "
+         "Transforms image using art media and style from another image.  Maps or synthesizes texture or theme from one image onto another. Requires separate resynthesizer plugin."
+         "Lloyd Konneker (bootch nc.rr.com)"
+         "Copyright 2010 Lloyd Konneker"
+         "2010"
+         "Style..."
+         1
+        (menu-path "<Image>/Filters/Map")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         6 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 16 "source-drawable" "Source of style:")
+        (proc-arg 3 "percent-transfer" "Percent transfer:")
+        (proc-arg 4 "map-mode" "Map by:"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-heal-transparency.py" 1529963675
+    (proc-def "python_fu_heal_transparency" 1
+         "Removes alpha channel by synthesis.  Fill outward for edges, inward for holes."
+         "Requires separate resynthesizer plugin."
+         "Lloyd Konneker"
+         "Copyright 2010 Lloyd Konneker"
+         "2010"
+         "Heal transparency..."
+         1
+        (menu-path "<Image>/Filters/Enhance")
+        (icon icon-name -1 "")
+         "RGBA, GRAYA"
+         5 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "samplingRadiusParam" "Context sampling width (pixels):")
+        (proc-arg 0 "orderParam" "Filling order:"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-heal-selection.py" 1529963675
+    (proc-def "python_fu_heal_selection" 1
+         "Heal the selection from surroundings as if using the heal tool."
+         "Requires separate resynthesizer plugin."
+         "Lloyd Konneker"
+         "2009 Lloyd Konneker"
+         "2009"
+         "_Heal selection..."
+         1
+        (menu-path "<Image>/Filters/Enhance")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         6 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "samplingRadiusParam" "Context sampling width (pixels):")
+        (proc-arg 0 "directionParam" "Sample from:")
+        (proc-arg 0 "orderParam" "Filling order:"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plug_in_lqr_iter" 1529963675
+    (proc-def "plug-in-lqr-Iterator" 1
+         "This procedure calculates the modified values for one iterationstep for the call of plug-in-lqr"
+         ""
+         "Carlo Baldassi <carlobaldassi@gmail.com>"
+         "Carlo Baldassi <carlobaldassi@gmail.com>"
+         "2008"
+         ""
+         0
+        (icon icon-name -1 "")
+         ""
+         4 0
+        (proc-arg 0 "run-mode" "non-interactive")
+        (proc-arg 0 "total-steps" "total number of steps (# of layers-1 to apply the related plug-in)")
+        (proc-arg 3 "current-step" "current (for linear iterations this is the layerstack position, otherwise some value inbetween)")
+        (proc-arg 0 "len-struct" "length of stored data structure with id is equal to the plug_in  proc_name")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/gimpmask" 1529963675
+    (proc-def "plug_in_gimpmask" 1
+         "GIMP MASK"
+         "GIMP MASK"
+         "Hirotsuna Mizuno <s1041150@u-aizu.ac.jp>"
+         "Copyright (c) 1997-1998 Hirotsuna Mizuno"
+         "May 1, 1998"
+         ""
+         1
+        (menu-path "<Image>/Filters/Misc/GIMP Mask")
+        (icon icon-name -1 "")
+         "RGB*"
+         6 0
+        (proc-arg 0 "run-mode" "interactive / non-interactive")
+        (proc-arg 13 "image" "input image")
+        (proc-arg 16 "drawable" "input drawable")
+        (proc-arg 0 "mask-type" "mask type [0:CP 1:FL 2:Q0 3:MEKO]")
+        (proc-arg 4 "cp-code" "CP code")
+        (proc-arg 0 "direction" "MEKO direction [0:PLUS 1:MINUS]")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/gimp-lqr-plugin" 1529963675
+    (proc-def "plug-in-lqr" 1
+         "scaling which keeps layer features (or removes them)"
+         "Resize a layer preserving (or removing) content"
+         "Carlo Baldassi <carlobaldassi@gmail.com>"
+         "Carlo Baldassi <carlobaldassi@gmail.com>"
+         "2010"
+         "Li_quid rescale..."
+         1
+        (menu-path "<Image>/Layer/")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         27 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "width" "Final width")
+        (proc-arg 0 "height" "Final height")
+        (proc-arg 0 "pres-layer" "Layer that marks preserved areas")
+        (proc-arg 0 "pres-coeff" "Preservation coefficient")
+        (proc-arg 0 "disc-layer" "Layer that marks areas to discard")
+        (proc-arg 0 "disc-coeff" "Discard coefficient")
+        (proc-arg 3 "rigidity" "Rigidity coefficient")
+        (proc-arg 0 "rigidity-mask-layer" "Layer used as rigidity mask")
+        (proc-arg 0 "delta-x" "max displacement of seams")
+        (proc-arg 3 "enl-step" "enlargment step (ratio)")
+        (proc-arg 0 "resize-aux-layers" "Whether to resize auxiliary layers")
+        (proc-arg 0 "resize-canvas" "Whether to resize canvas")
+        (proc-arg 0 "output-target" "Output target (same layer, new layer, new image)")
+        (proc-arg 0 "seams" "Whether to output the seam map")
+        (proc-arg 0 "nrg-func" "Energy function to use")
+        (proc-arg 0 "res-order" "Resize order")
+        (proc-arg 0 "mask-behavior" "What to do with masks")
+        (proc-arg 0 "scaleback" "Whether to scale back when done")
+        (proc-arg 0 "scaleback-mode" "Scale back mode")
+        (proc-arg 0 "no-disc-on-enlarge" "Ignore discard layer upon enlargement")
+        (proc-arg 4 "pres-layer-name" "Preservation layer name (for noninteractive mode only)")
+        (proc-arg 4 "disc-layer-name" "Discard layer name (for noninteractive mode only)")
+        (proc-arg 4 "rigmask-layer-name" "Rigidity mask layer name (for noninteractive mode only)")
+        (proc-arg 4 "selected-layer-name" "Selected layer name (for noninteractive mode only)"))
+    (locale-def "gimp20-lqr-plugin" "${gimp_installation_dir}/share/locale")
+    (help-def "plug-in-lqr-help" "file:///usr/share/gimp-lqr-plugin/help"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/fix-ca" 1529963675
+    (proc-def "Fix-CA" 1
+         "Fix-CA Version 3.0.2"
+         "Fix chromatic aberration caused by imperfect lens.  It works by shifting red and blue components of image pixels in the specified amounts."
+         "Kriang Lerdsuwanakij <lerdsuwa@users.sourceforge.net>"
+         "Kriang Lerdsuwanakij"
+         "2006, 2007"
+         "Chromatic Aberration..."
+         1
+        (menu-path "<Image>/Colors")
+        (icon icon-name -1 "")
+         "RGB*"
+         10 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 3 "blue" "Blue amount (lateral)")
+        (proc-arg 3 "red" "Red amount (lateral)")
+        (proc-arg 2 "interpolation" "Interpolation 0=None/1=Linear/2=Cubic")
+        (proc-arg 3 "x-blue" "Blue amount (x axis)")
+        (proc-arg 3 "x-red" "Red amount (x axis)")
+        (proc-arg 3 "y-blue" "Blue amount (y axis)")
+        (proc-arg 3 "y-red" "Red amount (y axis)")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/dbp" 1529963675
+    (proc-def "extension_dbp" 2
+         "Batch processes multiple images"
+         "DBP performs simple batch processing of images."
+         "David Hodson <hodsond@acm.org>"
+         "2001 - 2008 David Hodson"
+         "16 Dec 2008 (Version 1.1.9)"
+         ""
+         1
+        (menu-path "<Image>/Filters/Extensions/Batch/Batch Process...")
+        (icon icon-name -1 "")
+         ""
+         1 0
+        (proc-arg 0 "run-mode" "Interactive or non-interactive")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/gmic_gimp" 1547668837
+    (proc-def "plug-in-gmic-qt" 1
+         "G'MIC-Qt (2.4.5)"
+         "G'MIC-Qt (2.4.5)"
+         "Sébastien Fourey"
+         "Sébastien Fourey"
+         "2017"
+         "_G'MIC-Qt..."
+         1
+        (menu-path "<Image>/Filters")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         6 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable (unused)")
+        (proc-arg 0 "input" "Input layers mode, when non-interactive (0=none, 1=active, 2=all, 3=active & below, 4=active & above, 5=all visibles, 6=all invisibles, 7=all visibles (decr.), 8=all invisibles (decr.), 9=all (decr.))")
+        (proc-arg 0 "output" "Output mode, when non-interactive (0=in place,1=new layers,2=new active layers,3=new image)")
+        (proc-arg 4 "command" "G'MIC command string, when non-interactive")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/curve-bend/curve-bend" 1545661022
     (proc-def "plug-in-curve-bend" 1
          "Bend the image using two control curves"
@@ -4493,5 +5315,357 @@
          ""
          1 0
         (proc-arg 0 "run-mode" "Interactive, non-interactive")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_willow.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_willow" 1
+         "Add Instagram willow effect"
+         "Add Instagram willow effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Willow"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_walden.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_walden" 1
+         "Add Instagram walden effect"
+         "Add Instagram walden effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Walden"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_valencia.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_valencia" 1
+         "Add Instagram Valencia effect"
+         "Add Instagram Valencia effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Valencia"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_toaster.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_toaster" 1
+         "Add Instagram toaster effect"
+         "Add Instagram toaster effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Toaster"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_sutro.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_sutro" 1
+         "Add Instagram sutro effect"
+         "Add Instagram sutro effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Sutro"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_sierra.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_sierra" 1
+         "Add Instagram sierra effect"
+         "Add Instagram sierra effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Sierra"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_rise.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_rise" 1
+         "Add Instagram rise effect"
+         "Add Instagram rise effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Rise"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_poprocket.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_poprocket" 1
+         "Add Instagram poprocket effect"
+         "Add Instagram poprocket effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Poprocket"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_nashville.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_nashville" 1
+         "Add Instagram Nashville effect"
+         "Add Instagram Nashville effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Nashville"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_mayfair.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_mayfair" 1
+         "Add Instagram mayfair effect"
+         "Add Instagram mayfair effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Mayfair"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_lord_kelvin.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_lord_kelvin" 1
+         "Add Instagram Lord Kelvin effect"
+         "Add Instagram Lord Kelvin effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Lord Kelvin"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_lofi.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_lofi" 1
+         "Add Instagram lofi effect"
+         "Add Instagram lofi effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Lofi"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_inkwell.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_inkwell" 1
+         "Add Instagram inkwell effect"
+         "Add Instagram inkwell effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Inkwell"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_hudson.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_hudson" 1
+         "Add Instagram hudson effect"
+         "Add Instagram hudson effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Hudson"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_hefe.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_hefe" 1
+         "Add Instagram Hefe effect"
+         "Add Instagram Hefe effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Hefe"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_gotham.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_gotham" 1
+         "Add Instagram Gotham effect"
+         "Add Instagram Gotham effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Gotham"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_earlybird.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_earlybird" 1
+         "Add Instagram Earlybird effect"
+         "Add Instagram Earlybird effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Earlybird"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_brannan.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_brannan" 1
+         "Add Instagram Brannan effect"
+         "Add Instagram Brannan effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Brannan"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_apollo.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_apollo" 1
+         "Add Instagram apollo effect"
+         "Add Instagram apollo effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Apollo"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_amaro.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_amaro" 1
+         "Add Instagram Amaro effect"
+         "Add Instagram Amaro effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "Amaro"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_XproII.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_XproII" 1
+         "Add Instagram X-Pro II effect"
+         "Add Instagram X-Pro II effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "X-Pro II"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_dir}/plug-ins/gimp_instagram_1977.py" 1578750219
+    (proc-def "python-fu-gimp_instagram_1977" 1
+         "Add Instagram 1977 effect"
+         "Add Instagram 1977 effect"
+         "Marco Crippa"
+         "(©) 2013 Marco Crippa"
+         "2013-01-08"
+         "1977"
+         1
+        (menu-path "<Image>/Filters/Instagram")
+        (icon icon-name -1 "")
+         "RGB*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")))
 
 # end of pluginrc

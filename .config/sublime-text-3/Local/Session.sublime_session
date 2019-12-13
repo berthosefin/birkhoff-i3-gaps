@@ -1,0 +1,476 @@
+{
+	"folder_history":
+	[
+		"/home/birkhoff/.config/openbox",
+		"/home/birkhoff/git",
+		"/home/birkhoff/git/birkhoff-i3-gaps",
+		"/home/birkhoff/workspace",
+		"/home/birkhoff/workspace/ThosHack"
+	],
+	"last_version": 3207,
+	"last_window_id": 7,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/birkhoff/git/birkhoff-dotfiles/README.md",
+				"/home/birkhoff/git/birkhoff-i3-gaps/README.md",
+				"/home/birkhoff/git/birkhoff-xfce/README.md",
+				"/home/birkhoff/.dotfiles/README.md",
+				"/home/birkhoff/git/birkhoff-i3-gaps/.config/i3/config",
+				"/home/birkhoff/git/birkhoff-i3-gaps/.zshrc",
+				"/home/birkhoff/.config/polybar/scripts/launcher",
+				"/home/birkhoff/.config/polybar/scripts/powermenu",
+				"/home/birkhoff/.config/polybar/scripts/powermenu-alt",
+				"/home/birkhoff/Bureau/dotfiles-master/.scripts/wal_random.sh",
+				"/home/birkhoff/Bureau/dotfiles-master/.scripts/mpc_next.sh",
+				"/home/birkhoff/Bureau/dotfiles-master/Zero-two/i3/lock.sh",
+				"/home/birkhoff/Bureau/dotfiles-master/utility/start.sh",
+				"/home/birkhoff/Bureau/ultimate-dotfiles-master/.bin/gitpush",
+				"/home/birkhoff/.config/polybar/launch.sh",
+				"/home/birkhoff/dotfiles/.config/polybar/launch.sh",
+				"/home/birkhoff/.cache/wal/colors.sh",
+				"/home/birkhoff/dotfiles/.config/polybar/p4/scripts/powermenu",
+				"/home/birkhoff/Bureau/rofi-themes-master/install.sh",
+				"/home/birkhoff/workspace/cyberto/cyberto.py",
+				"/home/birkhoff/cupp/cupp.py",
+				"/home/birkhoff/workspace/ThosHack/ThosVenom.sh",
+				"/home/birkhoff/Hak9Tools/PwGen/pwgen.py",
+				"/home/birkhoff/Hak9Tools/VenomGen/VenomGen.sh",
+				"/home/birkhoff/Veil-Evasion/Veil-Evasion.py",
+				"/home/birkhoff/Hak9Tools/SocialPhish/socialphish.sh",
+				"/home/birkhoff/Hak9Tools/fbi/fbi.py",
+				"/home/birkhoff/VenomGen/VenomGen.sh",
+				"/home/birkhoff/Hak9Tools/hak9tools.sh",
+				"/home/birkhoff/Hak9Tools/PYcrypt/PYcrypt.py",
+				"/home/birkhoff/workspace/python/100284-1409605-configuration-des-ifaces-reseau/interface conf/ifaces.py",
+				"/home/birkhoff/workspace/python/52681-1322731-listing-et-logs-des-connexions-et-deconnexions-de-machines-que-l-on-peut-pinguer-dans-une-plage-d-adresse-donnee/whoishere.py",
+				"/home/birkhoff/workspace/python/42685-1183366-telechargeur-de-video-youtube/Main.py"
+			],
+			"find":
+			{
+				"height": 24.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"xfce4"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 22.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 44.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 179.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/birkhoff/.config/openbox/rc",
+					"settings":
+					{
+						"buffer_size": 18005,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/birkhoff/.config/openbox/rc.xml",
+					"settings":
+					{
+						"buffer_size": 20160,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/birkhoff/.config/openbox"
+			],
+			"file_history":
+			[
+				"/home/birkhoff/.config/openbox/menu.xml",
+				"/home/birkhoff/.config/openbox/autostart",
+				"/home/birkhoff/git/birkhoff-dotfiles/README.md",
+				"/home/birkhoff/git/birkhoff-i3-gaps/README.md",
+				"/home/birkhoff/git/birkhoff-xfce/README.md",
+				"/home/birkhoff/.dotfiles/README.md",
+				"/home/birkhoff/git/birkhoff-i3-gaps/.config/i3/config",
+				"/home/birkhoff/git/birkhoff-i3-gaps/.zshrc",
+				"/home/birkhoff/.config/polybar/scripts/launcher",
+				"/home/birkhoff/.config/polybar/scripts/powermenu",
+				"/home/birkhoff/.config/polybar/scripts/powermenu-alt",
+				"/home/birkhoff/Bureau/dotfiles-master/.scripts/wal_random.sh",
+				"/home/birkhoff/Bureau/dotfiles-master/.scripts/mpc_next.sh",
+				"/home/birkhoff/Bureau/dotfiles-master/Zero-two/i3/lock.sh",
+				"/home/birkhoff/Bureau/dotfiles-master/utility/start.sh",
+				"/home/birkhoff/Bureau/ultimate-dotfiles-master/.bin/gitpush",
+				"/home/birkhoff/.config/polybar/launch.sh",
+				"/home/birkhoff/dotfiles/.config/polybar/launch.sh",
+				"/home/birkhoff/.cache/wal/colors.sh",
+				"/home/birkhoff/dotfiles/.config/polybar/p4/scripts/powermenu",
+				"/home/birkhoff/Bureau/rofi-themes-master/install.sh",
+				"/home/birkhoff/workspace/cyberto/cyberto.py",
+				"/home/birkhoff/cupp/cupp.py",
+				"/home/birkhoff/workspace/ThosHack/ThosVenom.sh",
+				"/home/birkhoff/Hak9Tools/PwGen/pwgen.py",
+				"/home/birkhoff/Hak9Tools/VenomGen/VenomGen.sh",
+				"/home/birkhoff/Veil-Evasion/Veil-Evasion.py",
+				"/home/birkhoff/Hak9Tools/SocialPhish/socialphish.sh",
+				"/home/birkhoff/Hak9Tools/fbi/fbi.py",
+				"/home/birkhoff/VenomGen/VenomGen.sh",
+				"/home/birkhoff/Hak9Tools/hak9tools.sh",
+				"/home/birkhoff/Hak9Tools/PYcrypt/PYcrypt.py",
+				"/home/birkhoff/workspace/python/100284-1409605-configuration-des-ifaces-reseau/interface conf/ifaces.py",
+				"/home/birkhoff/workspace/python/52681-1322731-listing-et-logs-des-connexions-et-deconnexions-de-machines-que-l-on-peut-pinguer-dans-une-plage-d-adresse-donnee/whoishere.py",
+				"/home/birkhoff/workspace/python/42685-1183366-telechargeur-de-video-youtube/Main.py"
+			],
+			"find":
+			{
+				"height": 52.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/birkhoff/.config/openbox"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/birkhoff/.config/openbox/rc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 18005,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										16816,
+										16816
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/XML/XML.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 8581.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/birkhoff/.config/openbox/rc.xml",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 20160,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										12472,
+										12472
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/XML/XML.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 4292.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 52.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,341,186,1024,524,1366,768",
+			"project": "",
+			"replace":
+			{
+				"height": 100.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 179.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 7,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

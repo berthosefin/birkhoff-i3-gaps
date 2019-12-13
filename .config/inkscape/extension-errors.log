@@ -16,18 +16,6 @@ L'extension « LaTeX » n'a pas été chargée, car une dépendance est manqua
 Dépendance :
   type : executable
   emplacement : chemin
-  chaîne : latex
-
-L'extension « LaTeX » n'a pas été chargée, car une dépendance est manquante.
-Dépendance :
-  type : executable
-  emplacement : chemin
-  chaîne : dvips
-
-L'extension « LaTeX » n'a pas été chargée, car une dépendance est manquante.
-Dépendance :
-  type : executable
-  emplacement : chemin
   chaîne : pstoedit
 
 L'extension « Sketch Input » n'a pas été chargée, car une dépendance est manquante.
