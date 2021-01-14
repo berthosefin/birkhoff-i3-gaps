@@ -62,11 +62,11 @@
 ## Notes
 - If you want to use this configuration, inspect the code before use.
 - Install git
-- Clone this repo `git clone --depth=1 https://github.com/berthosefin/birkhoff-i3-gaps ~/.birkhoff-i3-gaps`
-- Deploy the dotfiles `cp -a ~/.birkhoff-i3-gaps/. ~`
+- Clone this repo `git clone --depth=1 https://github.com/berthosefin/i3-gaps ~/.i3-gaps`
+- Deploy the dotfiles `cp -a ~/.i3-gaps/. ~`
 - Change the default CLI Shell `chsh $(whoami) -s /bin/zsh`
 - If you find "birkhoff" in the configuration file, replace it with your own username.
-- Edit some system configuration, example in ~/.birkhoff-i3-gaps/.system
+- Edit some system configuration, example in ~/.i3-gaps/.system
 - Reboot
 - Fix some errors
 - Start working
